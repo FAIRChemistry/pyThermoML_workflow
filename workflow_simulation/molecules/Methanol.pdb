@@ -1,0 +1,6 @@
+COMPND    TraPPE-UA 18 methanol
+HETATM    1  O   Me      1       1.087   0.002  -0.030  1.00  0.00           O  
+HETATM    2  CH3 Me      1       2.503   0.008  -0.043  1.00  0.00           3  
+HETATM    3  H   Me      1       0.792   0.411  -0.861  1.00  0.00           H   
+CONECT    1    2    3                                              
+END
