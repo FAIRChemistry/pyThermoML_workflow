@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This XML file is designed for use with Foyer in the Molecular Simulation and Design Framework (github.com/mosdef-hub).-->
+<ForceField model="TraPPE-UA 18 methanol">
+  <!--XML units: kJ/mol for energies, nm for lengths, and radians for angles.-->
+  <!--For conversion from K to kJ/mol, we use: 1.38064852E-23*6.022140857E23/1000.-->
+  <AtomTypes>
+    <Type name="TrUA_O_6" class="sp3(O) O" element="O" mass="16.000"/>
+    <Type name="TrUA_H_7" class="s(H) H" element="H" mass="1.0079"/>
+    <Type name="TrUA_CH3_8" class="sp3(C) CH3" element="3" mass="15.0347"/>
+  </AtomTypes>
+    <Residues>
+    <Residue name="Me">
+	 <Atom name="O" type="TrUA_O_6"/>
+	 <Atom name="CH3" type="TrUA_CH3_8"/>
+	 <Atom name="H" type="TrUA_H_7"/>
+	 <Bond atomName1="O" atomName2="CH3"/>
+	 <Bond atomName1="O" atomName2="H"/>
+	</Residue>
+  </Residues>
+  <HarmonicBondForce>
+    <!--TraPPE uses fixed bond lengths. Force constants shown here come from GAFF, limited to three significant figures.-->
+    <Bond class1="sp3(O) O" class2="sp3(C) CH3" length="0.143" k="259000"/>
+    <Bond class1="sp3(O) O" class2="s(H) H" length="0.0945" k="354000"/>
+  </HarmonicBondForce>
+  <HarmonicAngleForce>
+    <Angle class1="sp3(C) CH3" class2="sp3(O) O" class3="s(H) H" angle="1.8937" k="460.62"/>
+  </HarmonicAngleForce>
+  <RBTorsionForce>
+    <!--OPLS style torsions have been converted to Ryckaert-Bellemans style.-->
+  </RBTorsionForce>
+  <NonbondedForce coulomb14scale="0.833333" lj14scale="0.5">
+	<!--Scale has been changed from 0.0 and 0.0 to match tip4p-fb, this can be done because OpenMM automatically creates exceptions for particles which are separated by 1, 2, or 3 bonds.-->
+    <Atom type="TrUA_CH3_8" charge="0.265" sigma="0.375" epsilon="0.81482"/>
+    <Atom type="TrUA_O_6" charge="-0.7" sigma="0.302" epsilon="0.77324"/>
+    <Atom type="TrUA_H_7" charge="0.435" sigma="0" epsilon="0"/>
+  </NonbondedForce>
+</ForceField>

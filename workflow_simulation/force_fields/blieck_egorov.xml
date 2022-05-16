@@ -1,0 +1,69 @@
+<ForceField>
+  <Info>
+    <Reference>Molecular dynamics simulations of glycerol glass-forming liquid, J. Blieck et al., modified charge central aliphatic hydrogen (Egorov et al.)</Reference>
+  </Info>
+  <AtomTypes>
+    <Type element="C" name="CT" class="CT" mass="12.01"/>
+    <Type element="H" name="H1" class="H1" mass="1.008"/>
+    <Type element="H" name="HO" class="HO" mass="1.008"/>
+    <Type element="O" name="OH" class="OH" mass="16.0"/>
+  </AtomTypes>
+ <Residues>
+  <Residue name="Gl">
+		<Atom name="C1" type="CT" charge="0.1820"/>
+		<Atom name="C3" type="CT" charge="0.1820"/>
+		<Atom name="C2" type="CT" charge="0.0550"/>
+		<Atom name="O1" type="OH" charge="-0.6048"/>
+		<Atom name="O2" type="OH" charge="-0.6048"/>
+		<Atom name="O3" type="OH" charge="-0.6048"/>
+		<Atom name="H6" type="HO" charge="0.4158"/>
+		<Atom name="H7" type="HO" charge="0.4158"/>
+		<Atom name="H8" type="HO" charge="0.4158"/>
+		<Atom name="H1" type="H1" charge="0.0260"/>
+		<Atom name="H2" type="H1" charge="0.0260"/>
+    <!-- modified charge central aliphatic hydrogen -> sum charges = 0--> 
+		<Atom name="H3" type="H1" charge="0.0440"/>
+		<Atom name="H4" type="H1" charge="0.0260"/>
+		<Atom name="H5" type="H1" charge="0.0260"/>
+		<Bond atomName1="C1" atomName2="H1"/>
+		<Bond atomName1="C1" atomName2="H2"/>
+		<Bond atomName1="C1" atomName2="O1"/>
+    <Bond atomName1="C1" atomName2="C2"/>
+		<Bond atomName1="O1" atomName2="H6"/>
+		<Bond atomName1="C2" atomName2="C3"/>
+		<Bond atomName1="C2" atomName2="H3"/>
+		<Bond atomName1="C2" atomName2="O2"/>
+		<Bond atomName1="O2" atomName2="H7"/>
+		<Bond atomName1="C3" atomName2="H4"/>
+		<Bond atomName1="C3" atomName2="H5"/>
+    <Bond atomName1="C3" atomName2="O3"/>
+    <Bond atomName1="O3" atomName2="H8"/>
+	</Residue>
+</Residues>
+<HarmonicBondForce>
+	<Bond type1="CT" type2="CT" length="0.1526" k="259408"/>
+	<Bond type1="CT" type2="OH" length="0.1410" k="267776"/>
+ 	<Bond type1="CT" type2="H1" length="0.1090" k="284512"/>
+	<Bond type1="HO" type2="OH" length="0.0960" k="462750"/>
+</HarmonicBondForce>
+<HarmonicAngleForce>
+	<Angle type1="CT" type2="CT" type3="CT" angle="1.911135530933791" k="334.72"/>
+	<Angle type1="CT" type2="CT" type3="OH" angle="1.911135530933791" k="418.40"/>
+	<Angle type1="CT" type2="CT" type3="H1" angle="1.911135530933791" k="418.40"/>
+	<Angle type1="CT" type2="OH" type3="HO" angle="1.8936822384138476" k="460.24"/>
+	<Angle type1="H1" type2="CT" type3="H1" angle="1.911135530933791" k="292.88"/>
+	<Angle type1="OH" type2="CT" type3="H1" angle="1.911135530933791" k="418.40"/>
+</HarmonicAngleForce>
+<PeriodicTorsionForce ordering="amber">
+	<Proper type1="" type2="CT" type3="CT" type4="" periodicity1="3" phase1="0.0" k1="0.6510304"/>
+	<Proper type1="OH" type2="CT" type3="CT" type4="OH" periodicity1="3" phase1="0.0" k1="0.602496" periodicity2="2" phase2="0.0" k2="4.184"/>
+	<Proper type1="" type2="OH" type3="CT" type4="" periodicity1="3" phase1="0.0" k1="0.6974728"/>
+</PeriodicTorsionForce>
+<NonbondedForce coulomb14scale="0.8333333333333334" lj14scale="0.5">
+    <UseAttributeFromResidue name="charge"/>
+	<Atom type="CT" sigma="0.3816" epsilon="0.4577296"/>
+	<Atom type="H1" sigma="0.2774" epsilon="0.0656888"/>
+	<Atom type="HO" sigma="0.14254" epsilon="0.2083632"/>
+	<Atom type="OH" sigma="0.28508" epsilon="0.6656744"/>
+</NonbondedForce>
+</ForceField>

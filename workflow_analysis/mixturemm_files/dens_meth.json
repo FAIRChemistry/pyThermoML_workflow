@@ -1,0 +1,1759 @@
+{
+    "workflow_info": {
+        "general": {
+            "package_name": "mixturemm",
+            "simulation_engine": "OpenMM",
+            "analysis_package": "MDAnalysis"
+        },
+        "simulation": {
+            "ensemble_order": "---(slow heating)---> |NpT| ---(rescale boxes and assign velocities)---> |NVT| ------> |NVE|",
+            "pressure_and_temperature_control": {
+                "NpT": "Langevin thermostat, Monte Carlo barostat",
+                "NVT": "Langevin thermostat",
+                "NVE": "no pressure and temperature control"
+            },
+            "constraints": "hydrogen bonds",
+            "nonbonded forces algorithm": "particle mesh ewald"
+        }
+    },
+    "project": {
+        "simulation_parameters": {
+            "total_number_of_molecules": [
+                2000,
+                6000,
+                15000
+            ],
+            "initial_box_side_lengths": [
+                65,
+                75,
+                102
+            ],
+            "water_mole_fractions": [
+                0,
+                0.1,
+                0.2,
+                0.3,
+                0.4,
+                0.5,
+                0.6,
+                0.7,
+                0.8,
+                0.9,
+                1
+            ],
+            "temperature_s_in_kelvin": [
+                298.15,
+                308.15,
+                318.15
+            ],
+            "pressure_s_in_bar": [
+                1
+            ],
+            "number_of_replicas": 40,
+            "replica_starting_number": 1,
+            "overcharged_boxes": {
+                "[2000] molecules": "with 60 replicas"
+            }
+        },
+        "hardware_settings": {
+            "platform": "CUDA",
+            "properties": {
+                "DeviceIndex": "0",
+                "Precision": "double"
+            }
+        },
+        "simulation_settings": {
+            "pme_error_tolerance": 1e-06,
+            "constraint_tolerance": 1e-07,
+            "cutoff_distance_in_nm": 1.4,
+            "switching_function_starting_distance_in_nm": 1.2
+        },
+        "npt_equilibration": {
+            "pressure_coupling_frequency": 500,
+            "temperature_coupling_frequency": 0.1,
+            "timestep_in_fs": 2,
+            "duration_in_ns": 12,
+            "state_data_reporting_frequency": 500
+        },
+        "nvt_equilibration": {
+            "temperature_coupling_frequency": 0.1,
+            "timestep_in_fs": 2,
+            "duration_in_ns": 20,
+            "state_data_reporting_frequency": 4000
+        },
+        "nve_production": {
+            "timestep_in_fs": 1,
+            "duration_in_ns": 50,
+            "state_data_reporting_frequency": 8000,
+            "unwrapped_trajectory_reporting_frequency": 4000,
+            "wrapped_trajectory_reporting_frequency": 8000
+        }
+    },
+    "molecules": {
+        "Water": {
+            "number_of_atoms": 4,
+            "abbreviation": "HOH",
+            "molar_ratio": 1,
+            "smiles_code": "O",
+            "inchi_key": "1S/H2O/h1H2",
+            "molar_mass": 18.015,
+            "used_as_water": true
+        },
+        "Methanol": {
+            "number_of_atoms": 3,
+            "abbreviation": "Me",
+            "molar_ratio": 1,
+            "smiles_code": "CO",
+            "inchi_key": "1S/CH4O/c1-2/h2H,1H3",
+            "molar_mass": 32.04,
+            "used_as_water": false
+        }
+    },
+    "force fields": {
+        "tip4p-fb": {
+            "built_in": false,
+            "added_elements": null
+        },
+        "trappe_methanol": {
+            "built_in": false,
+            "added_elements": {
+                "3": 15.0347
+            }
+        }
+    },
+    "units": [
+        {
+            "temperature": "kelvin"
+        },
+        {
+            "pressure": "bar"
+        },
+        {
+            "density": "gram per cubic centimeter"
+        },
+        {
+            "volume": "cubic nanometer"
+        }
+    ],
+    "densities": [
+        {
+            "total_number_molecules": 2000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.0,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.7833652512780647,
+            "stdev_density": 0.004982814730778556,
+            "volume": 135.85014760514778,
+            "stdev_volume": 0.8645028019881419
+        },
+        {
+            "total_number_molecules": 2000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.0,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.7735142895679804,
+            "stdev_density": 0.004964842813682772,
+            "volume": 137.58034559627998,
+            "stdev_volume": 0.8834053010425991
+        },
+        {
+            "total_number_molecules": 2000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.0,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.7632452780130371,
+            "stdev_density": 0.005004599922201844,
+            "volume": 139.43166035983842,
+            "stdev_volume": 0.9149806032431874
+        },
+        {
+            "total_number_molecules": 2000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.1,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8012181676790934,
+            "stdev_density": 0.005047178540084291,
+            "volume": 127.00841387812716,
+            "stdev_volume": 0.8002860805667354
+        },
+        {
+            "total_number_molecules": 2000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.1,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.7916060219768918,
+            "stdev_density": 0.004904442448183367,
+            "volume": 128.55045829241897,
+            "stdev_volume": 0.7967142264210397
+        },
+        {
+            "total_number_molecules": 2000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.1,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.7816672030710297,
+            "stdev_density": 0.0048960723725136055,
+            "volume": 130.18506979288566,
+            "stdev_volume": 0.8149257187810145
+        },
+        {
+            "total_number_molecules": 2000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.2,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8194948494949268,
+            "stdev_density": 0.004926439082182778,
+            "volume": 118.49049616719131,
+            "stdev_volume": 0.7124241921226013
+        },
+        {
+            "total_number_molecules": 2000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.2,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8102646583344904,
+            "stdev_density": 0.004771036729032392,
+            "volume": 119.840114805231,
+            "stdev_volume": 0.705936481289788
+        },
+        {
+            "total_number_molecules": 2000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.2,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8006483773634323,
+            "stdev_density": 0.004975137920772794,
+            "volume": 121.27994545414863,
+            "stdev_volume": 0.7537492846134013
+        },
+        {
+            "total_number_molecules": 2000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.3,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8397765321022197,
+            "stdev_density": 0.004980421423157225,
+            "volume": 110.08110324837966,
+            "stdev_volume": 0.6532465728908291
+        },
+        {
+            "total_number_molecules": 2000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.3,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8295466403167485,
+            "stdev_density": 0.0047765605789629965,
+            "volume": 111.43838721723645,
+            "stdev_volume": 0.6418790153928386
+        },
+        {
+            "total_number_molecules": 2000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.3,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8203429938564499,
+            "stdev_density": 0.0050311495196660025,
+            "volume": 112.68914341777638,
+            "stdev_volume": 0.6908279912201504
+        },
+        {
+            "total_number_molecules": 2000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.4,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8593679599799161,
+            "stdev_density": 0.004804174688618386,
+            "volume": 102.15001043053994,
+            "stdev_volume": 0.570385179691849
+        },
+        {
+            "total_number_molecules": 2000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.4,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8500236703150948,
+            "stdev_density": 0.00497895961212882,
+            "volume": 103.27326257088407,
+            "stdev_volume": 0.6049273934850539
+        },
+        {
+            "total_number_molecules": 2000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.4,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8403880702420845,
+            "stdev_density": 0.005042982672903497,
+            "volume": 104.45753683919628,
+            "stdev_volume": 0.6270221148021146
+        },
+        {
+            "total_number_molecules": 2000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.5,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8793533298312877,
+            "stdev_density": 0.004980345085404377,
+            "volume": 94.53060776409215,
+            "stdev_volume": 0.5354675199875074
+        },
+        {
+            "total_number_molecules": 2000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.5,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8706610066151914,
+            "stdev_density": 0.0048080785151424395,
+            "volume": 95.4742113671229,
+            "stdev_volume": 0.5272465795813779
+        },
+        {
+            "total_number_molecules": 2000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.5,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.861493433888104,
+            "stdev_density": 0.005543255547450045,
+            "volume": 96.49125183493041,
+            "stdev_volume": 0.6209666193516932
+        },
+        {
+            "total_number_molecules": 2000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.6,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.9004039694214154,
+            "stdev_density": 0.004902896922228147,
+            "volume": 87.14632281839783,
+            "stdev_volume": 0.4742037207803664
+        },
+        {
+            "total_number_molecules": 2000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.6,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8926924418369853,
+            "stdev_density": 0.0049583242513321696,
+            "volume": 87.8992444937569,
+            "stdev_volume": 0.48831280716735165
+        },
+        {
+            "total_number_molecules": 2000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.6,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8845922815502822,
+            "stdev_density": 0.005400552037725622,
+            "volume": 88.70470297243054,
+            "stdev_volume": 0.5417415792601409
+        },
+        {
+            "total_number_molecules": 2000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.7,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.9229978631177765,
+            "stdev_density": 0.004894698011722368,
+            "volume": 79.96560074378512,
+            "stdev_volume": 0.4242363236498863
+        },
+        {
+            "total_number_molecules": 2000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.7,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.9157145505475464,
+            "stdev_density": 0.00461532789062641,
+            "volume": 80.60140419310534,
+            "stdev_volume": 0.40657399082519974
+        },
+        {
+            "total_number_molecules": 2000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.7,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.907688102138789,
+            "stdev_density": 0.005197890066755934,
+            "volume": 81.31474149610088,
+            "stdev_volume": 0.4658344818216568
+        },
+        {
+            "total_number_molecules": 2000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.8,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.9467065947338238,
+            "stdev_density": 0.004683904414406221,
+            "volume": 73.04177161695713,
+            "stdev_volume": 0.36137940871284874
+        },
+        {
+            "total_number_molecules": 2000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.8,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.9406589038063001,
+            "stdev_density": 0.004959535505613542,
+            "volume": 73.51161630828881,
+            "stdev_volume": 0.3875872548267347
+        },
+        {
+            "total_number_molecules": 2000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.8,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.9333391519493028,
+            "stdev_density": 0.00532920563512052,
+            "volume": 74.08848849784164,
+            "stdev_volume": 0.42275252879094544
+        },
+        {
+            "total_number_molecules": 2000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.9,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.9703423098995928,
+            "stdev_density": 0.00485658008436946,
+            "volume": 66.46158006440152,
+            "stdev_volume": 0.33291854719196495
+        },
+        {
+            "total_number_molecules": 2000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.9,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.9656151902689477,
+            "stdev_density": 0.005255508241507987,
+            "volume": 66.78724184317825,
+            "stdev_volume": 0.3632451526960364
+        },
+        {
+            "total_number_molecules": 2000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.9,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.9607141615440885,
+            "stdev_density": 0.005102335420756041,
+            "volume": 67.12785977280059,
+            "stdev_volume": 0.3565604923972644
+        },
+        {
+            "total_number_molecules": 2000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 1.0,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.99673288066809,
+            "stdev_density": 0.005315739235055406,
+            "volume": 60.02811744147318,
+            "stdev_volume": 0.31983111693293675
+        },
+        {
+            "total_number_molecules": 2000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 1.0,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.9938632623562016,
+            "stdev_density": 0.0056387999102616064,
+            "volume": 60.20166717015715,
+            "stdev_volume": 0.3417551884428364
+        },
+        {
+            "total_number_molecules": 2000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 1.0,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.990467320443643,
+            "stdev_density": 0.005320819236441952,
+            "volume": 60.407874856266744,
+            "stdev_volume": 0.32469781585875185
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.0,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.7833423397501597,
+            "stdev_density": 0.002791909149789042,
+            "volume": 407.5510473132662,
+            "stdev_volume": 1.4531305173893583
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.0,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.7733023417961785,
+            "stdev_density": 0.0029380846223720073,
+            "volume": 412.8431080031697,
+            "stdev_volume": 1.5684939698513882
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.0,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.7632418564835236,
+            "stdev_density": 0.0029136183194853056,
+            "volume": 418.2849555215879,
+            "stdev_volume": 1.5966882657475998
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.1,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8013562688971116,
+            "stdev_density": 0.002800548154213735,
+            "volume": 380.9491133368823,
+            "stdev_volume": 1.3318682702205527
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.1,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.7915233749928066,
+            "stdev_density": 0.0028665484068229516,
+            "volume": 385.68189260327426,
+            "stdev_volume": 1.3965329040023131
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.1,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.7811329705370894,
+            "stdev_density": 0.002930110622910854,
+            "volume": 390.81249304723826,
+            "stdev_volume": 1.4653356401436783
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.2,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8204413896469499,
+            "stdev_density": 0.0026022187852924213,
+            "volume": 355.05212446243166,
+            "stdev_volume": 1.1267271217993724
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.2,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.809890714704446,
+            "stdev_density": 0.002808223254903605,
+            "volume": 359.6781938596868,
+            "stdev_volume": 1.2474772442245865
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.2,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8004557672380328,
+            "stdev_density": 0.0031263062524307175,
+            "volume": 363.9188883209413,
+            "stdev_volume": 1.422402567445427
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.3,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8398701224601341,
+            "stdev_density": 0.0027607583769062452,
+            "volume": 330.19845630677963,
+            "stdev_volume": 1.0850044613091503
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.3,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8298985512937483,
+            "stdev_density": 0.002783109007935042,
+            "volume": 334.1660729541845,
+            "stdev_volume": 1.1200981299795822
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.3,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8204913165974548,
+            "stdev_density": 0.002676108177447232,
+            "volume": 337.99720608758645,
+            "stdev_volume": 1.1023906773238106
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.4,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8591775791686254,
+            "stdev_density": 0.002836881918611558,
+            "volume": 306.51171224745354,
+            "stdev_volume": 1.012478806878959
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.4,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8494467951739915,
+            "stdev_density": 0.002942888048214219,
+            "volume": 310.02327781942074,
+            "stdev_volume": 1.0741790568204583
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.4,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8401196782580503,
+            "stdev_density": 0.003166000104034198,
+            "volume": 313.4658868587731,
+            "stdev_volume": 1.1817862451010877
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.5,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8796607356820367,
+            "stdev_density": 0.002820624549001001,
+            "volume": 283.48654040165013,
+            "stdev_volume": 0.9089732085719608
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.5,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8706534900078099,
+            "stdev_density": 0.002812257328220288,
+            "volume": 286.41936335518795,
+            "stdev_volume": 0.9257692124755996
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.5,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8614415077121584,
+            "stdev_density": 0.003131452436257632,
+            "volume": 289.48304798232886,
+            "stdev_volume": 1.0533885986740417
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.6,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.9008924822858406,
+            "stdev_density": 0.002760844434318975,
+            "volume": 261.29191437412135,
+            "stdev_volume": 0.8006024531286254
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.6,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8926660635310121,
+            "stdev_density": 0.003248213958167622,
+            "volume": 263.7008799205668,
+            "stdev_volume": 0.9591731228837272
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.6,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8834750766057944,
+            "stdev_density": 0.002969026003571609,
+            "volume": 266.44370273726685,
+            "stdev_volume": 0.8958407727434371
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.7,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.923669331417678,
+            "stdev_density": 0.0028922930884951476,
+            "volume": 239.7180148926128,
+            "stdev_volume": 0.7507633326189374
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.7,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.9159055154338738,
+            "stdev_density": 0.002795932614310494,
+            "volume": 241.7499034931928,
+            "stdev_volume": 0.7377944582197656
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.7,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.9080215282111997,
+            "stdev_density": 0.002960578285678822,
+            "volume": 243.84924094721836,
+            "stdev_volume": 0.794888158960848
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.8,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.9470604459733166,
+            "stdev_density": 0.002711936535334906,
+            "volume": 219.03987795346137,
+            "stdev_volume": 0.6272913430295053
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.8,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.9406211019917448,
+            "stdev_density": 0.0029172828084704644,
+            "volume": 220.53970348706318,
+            "stdev_volume": 0.6840801366239387
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.8,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.9339637577084025,
+            "stdev_density": 0.002995174373802064,
+            "volume": 222.11186964126614,
+            "stdev_volume": 0.7121971434949509
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.9,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.9708763483343467,
+            "stdev_density": 0.0030193643586755407,
+            "volume": 199.27199851139937,
+            "stdev_volume": 0.619609849799414
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.9,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.9658841578630463,
+            "stdev_density": 0.00293246974344676,
+            "volume": 200.3018496804163,
+            "stdev_volume": 0.6083501194965968
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.9,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.9602051648986784,
+            "stdev_density": 0.0029922366494019945,
+            "volume": 201.4866042146042,
+            "stdev_volume": 0.6278296907779038
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 1.0,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.9966186950344678,
+            "stdev_density": 0.00297877918926858,
+            "volume": 180.10147605468333,
+            "stdev_volume": 0.5379592015466387
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 1.0,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.9937396214954393,
+            "stdev_density": 0.003457377901492687,
+            "volume": 180.62384116699434,
+            "stdev_volume": 0.6282470903511893
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 1.0,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.9899145456257344,
+            "stdev_density": 0.003184311066252177,
+            "volume": 181.32146225753613,
+            "stdev_volume": 0.5832943730753304
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.0,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.7829847792401766,
+            "stdev_density": 0.0018187687524566247,
+            "volume": 1019.3354501511409,
+            "stdev_volume": 2.3677800163940708
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.0,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.7732117289856335,
+            "stdev_density": 0.0016583171109558195,
+            "volume": 1032.2185751498396,
+            "stdev_volume": 2.214958332235233
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.0,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.7628229801221909,
+            "stdev_density": 0.001901737953924964,
+            "volume": 1046.2778617935935,
+            "stdev_volume": 2.6085186602171886
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.1,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.801399442774896,
+            "stdev_density": 0.0016637612661495088,
+            "volume": 952.3139455366764,
+            "stdev_volume": 1.9767622251624957
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.1,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.7917299750097117,
+            "stdev_density": 0.0018738114366145683,
+            "volume": 963.9458846036549,
+            "stdev_volume": 2.281372174952785
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.1,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.7813667545705434,
+            "stdev_density": 0.0017929830017745403,
+            "volume": 976.7303120621461,
+            "stdev_volume": 2.240800753934586
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.2,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8204022939643393,
+            "stdev_density": 0.0018909277646141998,
+            "volume": 887.6683949553839,
+            "stdev_volume": 2.0470765795689374
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.2,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8104004470407876,
+            "stdev_density": 0.0017823908555987939,
+            "volume": 898.623444388967,
+            "stdev_volume": 1.977325058102743
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.2,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8003375025187638,
+            "stdev_density": 0.001999427122541379,
+            "volume": 909.9234482343683,
+            "stdev_volume": 2.2724200057947193
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.3,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8395548293405605,
+            "stdev_density": 0.001579793380661038,
+            "volume": 825.8001591570828,
+            "stdev_volume": 1.5536962514674089
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.3,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8300530539902911,
+            "stdev_density": 0.0017445285579025316,
+            "volume": 835.2539830636827,
+            "stdev_volume": 1.755449979728862
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.3,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8201516851402857,
+            "stdev_density": 0.0018655390238574876,
+            "volume": 845.3383166008857,
+            "stdev_volume": 1.9232514692637026
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.4,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8592646758636666,
+            "stdev_density": 0.001721681766226517,
+            "volume": 766.1963292159546,
+            "stdev_volume": 1.5351501320494045
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.4,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8498025055680882,
+            "stdev_density": 0.0018985454177752313,
+            "volume": 774.7283374766909,
+            "stdev_volume": 1.73027435847957
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.4,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8402984437940438,
+            "stdev_density": 0.0018380995044728764,
+            "volume": 783.4906187441138,
+            "stdev_volume": 1.7138969119609473
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.5,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8797197516992299,
+            "stdev_density": 0.0017672865075328396,
+            "volume": 708.6643813269739,
+            "stdev_volume": 1.4235557970052195
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.5,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8707360541193282,
+            "stdev_density": 0.001857763439403756,
+            "volume": 715.9762977089288,
+            "stdev_volume": 1.5279762112213962
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.5,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8614964236903404,
+            "stdev_density": 0.001793948725586213,
+            "volume": 723.6550547841709,
+            "stdev_volume": 1.5072723491015336
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.6,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.9011500225067969,
+            "stdev_density": 0.0017676950628804278,
+            "volume": 653.0394800462362,
+            "stdev_volume": 1.2807957517871575
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.6,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8926654188263948,
+            "stdev_density": 0.0017274245766790305,
+            "volume": 659.2464199314327,
+            "stdev_volume": 1.2755761969081525
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.6,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.8839262046829387,
+            "stdev_density": 0.0017645929793458112,
+            "volume": 665.7644279554312,
+            "stdev_volume": 1.3294549290415376
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.7,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.923228128989258,
+            "stdev_density": 0.001731177543461721,
+            "volume": 599.5776631814566,
+            "stdev_volume": 1.1239335938548454
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.7,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.9157920473667146,
+            "stdev_density": 0.0017246542458452224,
+            "volume": 604.4461546555578,
+            "stdev_volume": 1.1382357764889155
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.7,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.907739157111405,
+            "stdev_density": 0.0019383560550880268,
+            "volume": 609.8090379899681,
+            "stdev_volume": 1.302036885951475
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.8,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.9469041665903859,
+            "stdev_density": 0.001728131953705054,
+            "volume": 547.687405730783,
+            "stdev_volume": 0.9997557809671892
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.8,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.9401735114190187,
+            "stdev_density": 0.0018562431386601164,
+            "volume": 551.6085845325354,
+            "stdev_volume": 1.088830227581532
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.8,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.933486747120943,
+            "stdev_density": 0.0018693127552142262,
+            "volume": 555.55993747478,
+            "stdev_volume": 1.112793852827066
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.9,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.9705286291734171,
+            "stdev_density": 0.001839400232308093,
+            "volume": 498.3554542851672,
+            "stdev_volume": 0.9442375025220064
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.9,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.9656672871019901,
+            "stdev_density": 0.001812395392582754,
+            "volume": 500.8642304012535,
+            "stdev_volume": 0.9399248174018188
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.9,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.9603083463087194,
+            "stdev_density": 0.001878334087168603,
+            "volume": 503.6594248792024,
+            "stdev_volume": 0.9851131984428967
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 1.0,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.9968706954055205,
+            "stdev_density": 0.0020881603421102793,
+            "volume": 450.13782713614825,
+            "stdev_volume": 0.9431531044834011
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 1.0,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.9938281609900889,
+            "stdev_density": 0.0020279812224077436,
+            "volume": 451.51579092738,
+            "stdev_volume": 0.9215215039941742
+        },
+        {
+            "total_number_molecules": 15000,
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 1.0,
+            "molecules": [
+                "Methanol"
+            ],
+            "density": 0.9902790591513835,
+            "stdev_density": 0.002160921389922924,
+            "volume": 453.1342680052048,
+            "stdev_volume": 0.989073370679636
+        }
+    ],
+    "averaged densities": [
+        {
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.0,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.7832307900894669,
+            "stdev_density": 0.0031978308776747406
+        },
+        {
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.1,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.8013246264503671,
+            "stdev_density": 0.003170495986815845
+        },
+        {
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.2,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.8201128443687387,
+            "stdev_density": 0.003139861877363133
+        },
+        {
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.3,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.8397338279676381,
+            "stdev_density": 0.0031069910602415027
+        },
+        {
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.4,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.859270071670736,
+            "stdev_density": 0.0031209127911521538
+        },
+        {
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.5,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.8795779390708515,
+            "stdev_density": 0.003189418713979406
+        },
+        {
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.6,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.9008154914046843,
+            "stdev_density": 0.003143812139809183
+        },
+        {
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.7,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.9232984411749042,
+            "stdev_density": 0.0031727228812264124
+        },
+        {
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.8,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.9468904024325088,
+            "stdev_density": 0.0030413243011487272
+        },
+        {
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.9,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.9705824291357855,
+            "stdev_density": 0.003238448225117698
+        },
+        {
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 1.0,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.996740757036026,
+            "stdev_density": 0.003460892922144755
+        },
+        {
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.0,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.7733427867832642,
+            "stdev_density": 0.0031870815156701997
+        },
+        {
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.1,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.7916197906598034,
+            "stdev_density": 0.0032149340972069626
+        },
+        {
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.2,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.810185273359908,
+            "stdev_density": 0.0031205502798449304
+        },
+        {
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.3,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.829832748533596,
+            "stdev_density": 0.00310139938160019
+        },
+        {
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.4,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.8497576570190581,
+            "stdev_density": 0.0032734643593727566
+        },
+        {
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.5,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.8706835169141098,
+            "stdev_density": 0.003159366427588828
+        },
+        {
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.6,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.8926746413981307,
+            "stdev_density": 0.003311320928726274
+        },
+        {
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.7,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.9158040377827116,
+            "stdev_density": 0.0030453049169273756
+        },
+        {
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.8,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.9404845057390212,
+            "stdev_density": 0.0032443538175813743
+        },
+        {
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 0.9,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.9657222117446613,
+            "stdev_density": 0.0033334577925125002
+        },
+        {
+            "temperature": 308.15,
+            "pressure": 1.0,
+            "chi_water": 1.0,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.9938103482805766,
+            "stdev_density": 0.0037080530113873457
+        },
+        {
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.0,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.7631033715395839,
+            "stdev_density": 0.0032733187318707046
+        },
+        {
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.1,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.7813889760595542,
+            "stdev_density": 0.003206388665733
+        },
+        {
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.2,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.8004805490400763,
+            "stdev_density": 0.00336695709858163
+        },
+        {
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.3,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.8203286651980635,
+            "stdev_density": 0.003190932240323574
+        },
+        {
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.4,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.8402687307647262,
+            "stdev_density": 0.003349027427136857
+        },
+        {
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.5,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.8614771217635343,
+            "stdev_density": 0.0034895522364312963
+        },
+        {
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.6,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.8839978542796718,
+            "stdev_density": 0.0033780570068810143
+        },
+        {
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.7,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.9078162624871312,
+            "stdev_density": 0.003365608135840928
+        },
+        {
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.8,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.9335965522595494,
+            "stdev_density": 0.003397897588045603
+        },
+        {
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 0.9,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.9604092242504955,
+            "stdev_density": 0.003324302052442213
+        },
+        {
+            "temperature": 318.15,
+            "pressure": 1.0,
+            "chi_water": 1.0,
+            "molecules": [
+                "Methanol"
+            ],
+            "average_density": 0.9902203084069203,
+            "stdev_density": 0.0035553505642056844
+        }
+    ]
+}

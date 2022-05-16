@@ -1,0 +1,2013 @@
+{
+    "project": {
+        "simulation_parameters": {
+            "total_number_of_molecules": [
+                700,
+                3000,
+                6000
+            ],
+            "initial_box_side_lengths": [
+                40,
+                70,
+                90
+            ],
+            "water_mole_fractions": [
+                0.0,
+                0.1,
+                0.2,
+                0.3,
+                0.4,
+                0.5,
+                0.6,
+                0.7,
+                0.8,
+                0.9,
+                1.0
+            ],
+            "temperature_s_in_kelvin": [
+                288.15,
+                293.15,
+                298.15,
+                303.15
+            ],
+            "pressure_s_in_bar": [
+                1
+            ],
+            "number_of_replicas": 20,
+            "replica_starting_number": 1
+        },
+        "hardware_settings": {
+            "platform": "CUDA",
+            "properties": {
+                "DeviceIndex": "0",
+                "Precision": "double"
+            }
+        },
+        "simulation_settings": {
+            "pme_error_tolerance": 1e-06,
+            "constraint_tolerance": 1e-07,
+            "cutoff_distance_in_nm": 1.1,
+            "switching_function_starting_distance_in_nm": 1.0
+        },
+        "npt_equilibration": {
+            "pressure_coupling_frequency": 500,
+            "temperature_coupling_frequency": 0.1,
+            "timestep_in_fs": 2,
+            "duration_in_ns": 12,
+            "state_data_reporting_frequency": 500
+        },
+        "nvt_equilibration": {
+            "temperature_coupling_frequency": 0.1,
+            "timestep_in_fs": 2,
+            "duration_in_ns": 20,
+            "state_data_reporting_frequency": 4000
+        },
+        "nve_production": {
+            "timestep_in_fs": 1,
+            "duration_in_ns": 50,
+            "state_data_reporting_frequency": 4000,
+            "unwrapped_trajectory_reporting_frequency": 4000,
+            "wrapped_trajectory_reporting_frequency": 8000
+        }
+    },
+    "molecules": {
+        "Water": {
+            "number_of_atoms": 4,
+            "abbreviation": "HOH",
+            "molar_ratio": 1,
+            "smiles_code": "O",
+            "inchi_key": "1S/H2O/h1H2",
+            "molar_mass": 18.015,
+            "used_as_water": true
+        },
+        "Glycerol": {
+            "number_of_atoms": 14,
+            "abbreviation": "Gl",
+            "molar_ratio": 1,
+            "smiles_code": "C(C(CO)O)O",
+            "inchi_key": "1S/C3H8O3/c4-1-3(6)2-5/h3-6H,1-2H2",
+            "molar_mass": 92.09382,
+            "used_as_water": false
+        }
+    },
+    "force fields": {
+        "tip4p-fb": {
+            "built_in": false,
+            "added_elements": null
+        },
+        "blieck_egorov": {
+            "built_in": false,
+            "added_elements": null
+        }
+    },
+    "units": [
+        {
+            "temperature": "kelvin"
+        },
+        {
+            "pressure": "bar"
+        },
+        {
+            "density": "gram per cubic centimeter"
+        },
+        {
+            "volume": "cubic nanometer"
+        }
+    ],
+    "densities": [
+        {
+            "total_number_molecules": 700,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.0,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2300446339762834,
+            "volume": 87.02831020048656
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.0,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.22965497864167,
+            "volume": 87.05621283956002
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.0,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2245466730819452,
+            "volume": 87.41925037107295
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.0,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2200723706232368,
+            "volume": 87.73992013674226
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.1,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2255112352290787,
+            "volume": 80.32412179556701
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.1,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2253958202804807,
+            "volume": 80.33163318298415
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.1,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2213799513919819,
+            "volume": 80.5958321697197
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.1,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2161738084560552,
+            "volume": 80.94095416421558
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.2,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2234212173660566,
+            "volume": 73.42315616344816
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.2,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2181356523782818,
+            "volume": 73.74164131565458
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.2,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2153383020961035,
+            "volume": 73.9114381330051
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.2,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2128280671136724,
+            "volume": 74.06445874064669
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.3,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2158624565577845,
+            "volume": 66.79786651603858
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.3,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2137493629343716,
+            "volume": 66.91386602470412
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.3,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2102947021359138,
+            "volume": 67.10504779032239
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.3,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.206321393854581,
+            "volume": 67.32593562517309
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.4,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2097987096740457,
+            "volume": 60.0148815254871
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.4,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2067932348231545,
+            "volume": 60.16427763131577
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.4,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.202416163880817,
+            "volume": 60.38344756035288
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.4,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.199399548270898,
+            "volume": 60.53543115237192
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.5,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1990984473679933,
+            "volume": 53.36960103091551
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.5,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1970092861398067,
+            "volume": 53.462750281358566
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.5,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1937329924769473,
+            "volume": 53.60953259671437
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.5,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1896809392094323,
+            "volume": 53.792206676037246
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.6,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1871448030689886,
+            "volume": 46.65358153315667
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.6,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1830482393946358,
+            "volume": 46.81511449256566
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.6,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1792921620357877,
+            "volume": 46.96430082469839
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.6,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.175391739916272,
+            "volume": 47.12012207773578
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.7,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1674163160401716,
+            "volume": 40.171430368375894
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.7,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1644035479844752,
+            "volume": 40.27553051944834
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.7,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1597386009502921,
+            "volume": 40.43744587412363
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.7,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1572314294956412,
+            "volume": 40.5251481064884
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.8,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1371088567269187,
+            "volume": 33.561657938486235
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.8,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1338487902761092,
+            "volume": 33.65833477772979
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.8,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.131421708610585,
+            "volume": 33.730467443538025
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.8,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.127050074977618,
+            "volume": 33.861233231220886
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.9,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.0883446040419331,
+            "volume": 27.15378037462658
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.9,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.0848787893509302,
+            "volume": 27.240739528799715
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.9,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.082429719576853,
+            "volume": 27.302185828664253
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.9,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.0795087773924028,
+            "volume": 27.375969625019845
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 1.0,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 0.9971967108356672,
+            "volume": 21.001370784387134
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 1.0,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 0.9973786077793563,
+            "volume": 20.997806329369258
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 1.0,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 0.9959711697031266,
+            "volume": 21.02720416060248
+        },
+        {
+            "total_number_molecules": 700,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 1.0,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 0.9953625208412711,
+            "volume": 21.04009776754619
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.0,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2316035162395673,
+            "volume": 372.5043756518465
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.0,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2275304435885241,
+            "volume": 373.74050101937337
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.0,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2237153179431048,
+            "volume": 374.90589753529986
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.0,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2205716860181124,
+            "volume": 375.8716212251171
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.1,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2275103842760418,
+            "volume": 343.6833317697175
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.1,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2233070055769377,
+            "volume": 344.8641912208893
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.1,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2202270079314457,
+            "volume": 345.7347087169847
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.1,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2166557635163238,
+            "volume": 346.74958749539553
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.2,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.223549065097464,
+            "volume": 314.63531226188786
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.2,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2187510314997547,
+            "volume": 315.87378667271
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.2,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2155856290031797,
+            "volume": 316.6965734301485
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.2,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2117703609145571,
+            "volume": 317.69365524042337
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.3,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.21700836708731,
+            "volume": 286.00340057153295
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.3,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2132800437100335,
+            "volume": 286.88223905603127
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.3,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2094879407281327,
+            "volume": 287.7817253525961
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.3,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2063253039035786,
+            "volume": 288.5363702458816
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.4,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2096615245515738,
+            "volume": 257.2334334446146
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.4,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2067747598503498,
+            "volume": 257.8487612700803
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.4,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2027184164567257,
+            "volume": 258.7184211333409
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.4,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1989444186951483,
+            "volume": 259.5328339479271
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.5,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1999252387560655,
+            "volume": 228.56624670160033
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.5,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1963653624951849,
+            "volume": 229.2461484807677
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.5,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.192738348886525,
+            "volume": 229.94340332829262
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.5,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1895538785895317,
+            "volume": 230.55904639541234
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.6,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1867936193102688,
+            "volume": 200.0004695253267
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.6,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1830100393528538,
+            "volume": 200.64006036316061
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.6,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.178880424016671,
+            "volume": 201.34283316818548
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.6,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1754470948326112,
+            "volume": 201.93114985314432
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.7,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1673595915938377,
+            "volume": 171.71741901773805
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.7,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1641014559841065,
+            "volume": 172.19806468684888
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.7,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.160137533105366,
+            "volume": 172.78666053962732
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.7,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1565666941444939,
+            "volume": 173.32006639540833
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.8,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1370655785409531,
+            "volume": 143.8378076478412
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.8,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1339179433353606,
+            "volume": 144.23711188127868
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.8,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1306919351773204,
+            "volume": 144.64866069723837
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.8,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1270896465354647,
+            "volume": 145.1107973277959
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.9,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.0883039363163294,
+            "volume": 116.37383815520452
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.9,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.0853122307659164,
+            "volume": 116.69450494927067
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.9,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.0826238571258753,
+            "volume": 116.98444547602695
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.9,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.079712376474173,
+            "volume": 117.299838292396
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 1.0,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 0.998615639817531,
+            "volume": 89.87176320912916
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 1.0,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 0.9975322311581339,
+            "volume": 89.96940993377879
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 1.0,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 0.9971512223932393,
+            "volume": 90.00372729203882
+        },
+        {
+            "total_number_molecules": 3000,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 1.0,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 0.9953852919993724,
+            "volume": 90.1633857890257
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.0,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2305659250806948,
+            "volume": 745.6365296174691
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.0,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2280631222718719,
+            "volume": 747.1561869985568
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.0,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.224209546890467,
+            "volume": 749.5080743197217
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.0,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2206822288402288,
+            "volume": 751.6738940663869
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.1,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.227582288550829,
+            "volume": 687.3255615931404
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.1,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2239235419190928,
+            "volume": 689.3802676331514
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.1,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2205580988530425,
+            "volume": 691.2810431397477
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.1,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2162821200022182,
+            "volume": 693.7114356554094
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.2,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2223388123680716,
+            "volume": 629.8926753468542
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.2,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2189548994447166,
+            "volume": 631.641521168626
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.2,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2159932295750013,
+            "volume": 633.1797826468139
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.2,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2121432122712157,
+            "volume": 635.1909707693242
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.3,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2170243508568568,
+            "volume": 571.9985646854072
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.3,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2133488707758022,
+            "volume": 573.7312922581657
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.3,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.210109397990275,
+            "volume": 575.2671421077654
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.3,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2064706075820364,
+            "volume": 577.0022481122076
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.4,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2096587908065204,
+            "volume": 514.46736592533
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.4,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.2062012647256468,
+            "volume": 515.9419088103492
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.4,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.202603488861252,
+            "volume": 517.485580452154
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.4,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.198928222806098,
+            "volume": 519.0718176467319
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.5,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.200350919922733,
+            "volume": 456.96935162475364
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.5,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1962961579895668,
+            "volume": 458.5181443205295
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.5,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.192798955137162,
+            "volume": 459.862661614173
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.5,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1892447859270507,
+            "volume": 461.2369041958487
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.6,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.186902838271492,
+            "volume": 399.96301754864857
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.6,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1830292245790586,
+            "volume": 401.27255582600816
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.6,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1794145595799488,
+            "volume": 402.5023373277212
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.6,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1760264213435745,
+            "volume": 403.6620572988102
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.7,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1671195419392042,
+            "volume": 343.50468557942094
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.7,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1634730713396775,
+            "volume": 344.58135435209533
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.7,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1603708093256806,
+            "volume": 345.5024453144595
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.7,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1564064065627917,
+            "volume": 346.68704420647276
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.8,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1368576011102967,
+            "volume": 287.7271401813388
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.8,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1340519259238213,
+            "volume": 288.4390222165138
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.8,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.130592638329899,
+            "volume": 289.3214783534367
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.8,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.1276343868316756,
+            "volume": 290.08063744197665
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.9,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.087471539142165,
+            "volume": 232.92433627664974
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.9,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.0850390304104618,
+            "volume": 233.44657139779693
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.9,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.0823897447051365,
+            "volume": 234.01785125811932
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.9,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 1.0796944167169589,
+            "volume": 234.60211717229123
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 1.0,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 0.9987720231156719,
+            "volume": 179.71329864310854
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 1.0,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 0.9978969988235467,
+            "volume": 179.871183557904
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 1.0,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 0.9967110288350245,
+            "volume": 180.08495072863437
+        },
+        {
+            "total_number_molecules": 6000,
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 1.0,
+            "molecules": [
+                "Glycerol"
+            ],
+            "density": 0.9952368441585148,
+            "volume": 180.35183453844962
+        }
+    ],
+    "averaged densities": [
+        {
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.0,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.2307380250988484,
+            "stdev_density": 0.0007935630345988155
+        },
+        {
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.1,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.226867969351983,
+            "stdev_density": 0.0011755161276533622
+        },
+        {
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.2,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.2231030316105307,
+            "stdev_density": 0.0006649131887059577
+        },
+        {
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.3,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.2166317248339837,
+            "stdev_density": 0.0006662538035892814
+        },
+        {
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.4,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.20970634167738,
+            "stdev_density": 8.000470890224057e-05
+        },
+        {
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.5,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.1997915353489306,
+            "stdev_density": 0.0006368511018311855
+        },
+        {
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.6,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.1869470868835832,
+            "stdev_density": 0.00017972468625967477
+        },
+        {
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.7,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.167298483191071,
+            "stdev_density": 0.00015754172278403567
+        },
+        {
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.8,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.1370106787927228,
+            "stdev_density": 0.00013432361291987674
+        },
+        {
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 0.9,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.0880400265001424,
+            "stdev_density": 0.0004927442268678842
+        },
+        {
+            "temperature": 288.15,
+            "pressure": 1.0,
+            "chi_water": 1.0,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 0.9981947912562901,
+            "stdev_density": 0.0008678924636770192
+        },
+        {
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.0,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.2284161815006887,
+            "stdev_density": 0.001105396043190331
+        },
+        {
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.1,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.2242087892588371,
+            "stdev_density": 0.0010732246969100544
+        },
+        {
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.2,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.2186138611075843,
+            "stdev_density": 0.0004265011445841854
+        },
+        {
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.3,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.2134594258067357,
+            "stdev_density": 0.0002534402192468203
+        },
+        {
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.4,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.2065897531330503,
+            "stdev_density": 0.0003365676205017901
+        },
+        {
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.5,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.1965569355415195,
+            "stdev_density": 0.0003932723149772864
+        },
+        {
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.6,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.183029167775516,
+            "stdev_density": 1.9100084241140695e-05
+        },
+        {
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.7,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.1639926917694197,
+            "stdev_density": 0.0004746777195380409
+        },
+        {
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.8,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.1339395531784304,
+            "stdev_density": 0.00010327759597793826
+        },
+        {
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 0.9,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.0850766835091028,
+            "stdev_density": 0.00021916017415185663
+        },
+        {
+            "temperature": 293.15,
+            "pressure": 1.0,
+            "chi_water": 1.0,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 0.9976026125870123,
+            "stdev_density": 0.0002662658029533961
+        },
+        {
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.0,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.2241571793051724,
+            "stdev_density": 0.00041814425108001253
+        },
+        {
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.1,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.2207216860588233,
+            "stdev_density": 0.0005936246593763459
+        },
+        {
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.2,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.2156390535580948,
+            "stdev_density": 0.00033071609872333294
+        },
+        {
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.3,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.2099640136181071,
+            "stdev_density": 0.00042257360781789284
+        },
+        {
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.4,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.2025793563995983,
+            "stdev_density": 0.00015256453287037806
+        },
+        {
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.5,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.1930900988335449,
+            "stdev_density": 0.0005575862775836291
+        },
+        {
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.6,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.1791957152108026,
+            "stdev_density": 0.00027982439587498673
+        },
+        {
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.7,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.1600823144604462,
+            "stdev_density": 0.0003197009251439759
+        },
+        {
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.8,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.1309020940392682,
+            "stdev_density": 0.00045272998908912145
+        },
+        {
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 0.9,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.082481107135955,
+            "stdev_density": 0.0001252304567941832
+        },
+        {
+            "temperature": 298.15,
+            "pressure": 1.0,
+            "chi_water": 1.0,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 0.9966111403104635,
+            "stdev_density": 0.0005963341142889415
+        },
+        {
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.0,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.220442095160526,
+            "stdev_density": 0.0003249263054688647
+        },
+        {
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.1,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.2163705639915323,
+            "stdev_density": 0.00025285751810847555
+        },
+        {
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.2,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.2122472134331483,
+            "stdev_density": 0.0005364678761810782
+        },
+        {
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.3,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.2063724351133986,
+            "stdev_density": 8.504232663570053e-05
+        },
+        {
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.4,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.199090729924048,
+            "stdev_density": 0.00026756710414178755
+        },
+        {
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.5,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.189493201242005,
+            "stdev_density": 0.0002243183603948053
+        },
+        {
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.6,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.1756217520308192,
+            "stdev_density": 0.00035154513395161953
+        },
+        {
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.7,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.1567348434009757,
+            "stdev_density": 0.00043746010020732294
+        },
+        {
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.8,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.1272580361149194,
+            "stdev_density": 0.0003265292843678212
+        },
+        {
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 0.9,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 1.079638523527845,
+            "stdev_density": 0.00011272170583526089
+        },
+        {
+            "temperature": 303.15,
+            "pressure": 1.0,
+            "chi_water": 1.0,
+            "molecules": [
+                "Glycerol"
+            ],
+            "average_density": 0.9953282189997195,
+            "stdev_density": 7.994781181621764e-05
+        }
+    ]
+}
