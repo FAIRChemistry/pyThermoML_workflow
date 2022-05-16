@@ -1,0 +1,195 @@
+<module xmlns="http://www.xml-cml.org/schema" convention="convention:compchem">
+  <module dictRef="des:mixture">
+    <module dictRef="des:viscosity">
+      <module dictRef="des:experiment">
+        <propertyList>
+          <property dictRef="des:DOI">
+            <scalar dataType="xsd:string">10.1039/c1cp22554e</scalar>
+          </property>
+          <property dictRef="des:ID">
+            <scalar dataType="xsd:integer">100</scalar>
+          </property>
+          <property dictRef="des:value_viscosity">
+            <scalar dataType="xsd:double">750</scalar>
+          </property>
+          <property dictRef="des:error_viscosity">
+            <scalar dataType="xsd:double">15</scalar>
+          </property>
+        </propertyList>
+        <parameterList>
+          <parameter dictRef="des:molar_ratio_of_DES">
+            <scalar dataType="xsd:double">0.5</scalar>
+          </parameter>
+          <parameter dictRef="des:mole_fraction_of_water">
+            <scalar dataType="xsd:double">0</scalar>
+          </parameter>
+          <parameter dictRef="des:temperature">
+            <scalar dataType="xsd:double">298</scalar>
+          </parameter>
+        </parameterList>
+      </module>
+      <module dictRef="des:experiment">
+        <propertyList>
+          <property dictRef="des:DOI">
+            <scalar dataType="xsd:string">10.1039/c1cp22554e</scalar>
+          </property>
+          <property dictRef="des:ID">
+            <scalar dataType="xsd:integer">101</scalar>
+          </property>
+          <property dictRef="des:value_viscosity">
+            <scalar dataType="xsd:double">449</scalar>
+          </property>
+          <property dictRef="des:error_viscosity">
+            <scalar dataType="xsd:double">8.98</scalar>
+          </property>
+        </propertyList>
+        <parameterList>
+          <parameter dictRef="des:molar_ratio_of_DES">
+            <scalar dataType="xsd:double">0.5</scalar>
+          </parameter>
+          <parameter dictRef="des:mole_fraction_of_water">
+            <scalar dataType="xsd:double">0</scalar>
+          </parameter>
+          <parameter dictRef="des:temperature">
+            <scalar dataType="xsd:double">303</scalar>
+          </parameter>
+        </parameterList>
+      </module>
+      <module dictRef="des:experiment">
+        <propertyList>
+          <property dictRef="des:DOI">
+            <scalar dataType="xsd:string">10.1039/c1cp22554e</scalar>
+          </property>
+          <property dictRef="des:ID">
+            <scalar dataType="xsd:integer">102</scalar>
+          </property>
+          <property dictRef="des:value_viscosity">
+            <scalar dataType="xsd:double">330</scalar>
+          </property>
+          <property dictRef="des:error_viscosity">
+            <scalar dataType="xsd:double">6.6</scalar>
+          </property>
+        </propertyList>
+        <parameterList>
+          <parameter dictRef="des:molar_ratio_of_DES">
+            <scalar dataType="xsd:double">0.5</scalar>
+          </parameter>
+          <parameter dictRef="des:mole_fraction_of_water">
+            <scalar dataType="xsd:double">0</scalar>
+          </parameter>
+          <parameter dictRef="des:temperature">
+            <scalar dataType="xsd:double">308</scalar>
+          </parameter>
+        </parameterList>
+      </module>
+      <module dictRef="des:experiment">
+        <propertyList>
+          <property dictRef="des:DOI">
+            <scalar dataType="xsd:string">10.1039/c1cp22554e</scalar>
+          </property>
+          <property dictRef="des:ID">
+            <scalar dataType="xsd:integer">103</scalar>
+          </property>
+          <property dictRef="des:value_viscosity">
+            <scalar dataType="xsd:double">231</scalar>
+          </property>
+          <property dictRef="des:error_viscosity">
+            <scalar dataType="xsd:double">4.62</scalar>
+          </property>
+        </propertyList>
+        <parameterList>
+          <parameter dictRef="des:molar_ratio_of_DES">
+            <scalar dataType="xsd:double">0.5</scalar>
+          </parameter>
+          <parameter dictRef="des:mole_fraction_of_water">
+            <scalar dataType="xsd:double">0</scalar>
+          </parameter>
+          <parameter dictRef="des:temperature">
+            <scalar dataType="xsd:double">313</scalar>
+          </parameter>
+        </parameterList>
+      </module>
+      <module dictRef="des:experiment">
+        <propertyList>
+          <property dictRef="des:DOI">
+            <scalar dataType="xsd:string">10.1039/c1cp22554e</scalar>
+          </property>
+          <property dictRef="des:ID">
+            <scalar dataType="xsd:integer">104</scalar>
+          </property>
+          <property dictRef="des:value_viscosity">
+            <scalar dataType="xsd:double">161</scalar>
+          </property>
+          <property dictRef="des:error_viscosity">
+            <scalar dataType="xsd:double">3.22</scalar>
+          </property>
+        </propertyList>
+        <parameterList>
+          <parameter dictRef="des:molar_ratio_of_DES">
+            <scalar dataType="xsd:double">0.5</scalar>
+          </parameter>
+          <parameter dictRef="des:mole_fraction_of_water">
+            <scalar dataType="xsd:double">0</scalar>
+          </parameter>
+          <parameter dictRef="des:temperature">
+            <scalar dataType="xsd:double">318</scalar>
+          </parameter>
+        </parameterList>
+      </module>
+      <module dictRef="des:experiment">
+        <propertyList>
+          <property dictRef="des:DOI">
+            <scalar dataType="xsd:string">10.1039/c1cp22554e</scalar>
+          </property>
+          <property dictRef="des:ID">
+            <scalar dataType="xsd:integer">105</scalar>
+          </property>
+          <property dictRef="des:value_viscosity">
+            <scalar dataType="xsd:double">119</scalar>
+          </property>
+          <property dictRef="des:error_viscosity">
+            <scalar dataType="xsd:double">2.38</scalar>
+          </property>
+        </propertyList>
+        <parameterList>
+          <parameter dictRef="des:molar_ratio_of_DES">
+            <scalar dataType="xsd:double">0.5</scalar>
+          </parameter>
+          <parameter dictRef="des:mole_fraction_of_water">
+            <scalar dataType="xsd:double">0</scalar>
+          </parameter>
+          <parameter dictRef="des:temperature">
+            <scalar dataType="xsd:double">323</scalar>
+          </parameter>
+        </parameterList>
+      </module>
+      <module dictRef="des:experiment">
+        <propertyList>
+          <property dictRef="des:DOI">
+            <scalar dataType="xsd:string">10.1039/c1cp22554e</scalar>
+          </property>
+          <property dictRef="des:ID">
+            <scalar dataType="xsd:integer">106</scalar>
+          </property>
+          <property dictRef="des:value_viscosity">
+            <scalar dataType="xsd:double">95</scalar>
+          </property>
+          <property dictRef="des:error_viscosity">
+            <scalar dataType="xsd:double">1.9</scalar>
+          </property>
+        </propertyList>
+        <parameterList>
+          <parameter dictRef="des:molar_ratio_of_DES">
+            <scalar dataType="xsd:double">0.5</scalar>
+          </parameter>
+          <parameter dictRef="des:mole_fraction_of_water">
+            <scalar dataType="xsd:double">0</scalar>
+          </parameter>
+          <parameter dictRef="des:temperature">
+            <scalar dataType="xsd:double">328</scalar>
+          </parameter>
+        </parameterList>
+      </module>
+      </module>
+  </module>
+</module>
