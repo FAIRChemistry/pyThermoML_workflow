@@ -6,4 +6,4 @@ This directory contains:
 * thermoml_files: Created ThermoML files of simulated and experimental data. Created with `experimental_thermoml`, `mixturemm_thermoml` and functionalites of `pyThermoML`.
 * plots: Visualizations of integrated chemical quantities.
 
-The workflow itself is performed in `workflow.ipynb`.
+The workflow itself is available in `workflow.ipynb`.
