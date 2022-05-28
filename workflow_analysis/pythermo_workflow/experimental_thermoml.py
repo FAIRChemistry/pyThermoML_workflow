@@ -90,13 +90,13 @@ class ExperimentThermoML(BaseModel):
             "author4": "L. A. Woolf"
         }
 
-        title="Diffusion Coefficients of Methanol and Water and the Mutual Diffusion Coefficient inMethanol-Water Solutions at 278 and 298 K"
+        title="Diffusion Coefficients of Methanol and Water and the Mutual Diffusion Coefficient in Methanol-Water Solutions at 278 and 298 K"
         DOI = "10.1021/j100270a039"
 
         comp1 = Compound(ID="cw", standardInchI="InChI=1S/H2O/h1H2", standardInchIKey="XLYOFNOQVPJJNP-UHFFFAOYSA-N", smiles="O", commonName="water")
         comp2 = Compound(ID="cc", standardInchI="InChI=1S/CH4O/c1-2/h2H,1H3", standardInchIKey="OKKJLVBELUTLKV-UHFFFAOYSA-N", smiles="CO", commonName="methanol")
 
-        return self.expDFToThermoML(df=df_sdiff_meth1, authors=authors, title=title, DOI=DOI, water=comp1, second_compound=comp2, property1="Self diffusion coefficient", property2="Self diffusion coefficient", df2=df_sdiff_meth2)
+        return self.expDFToThermoML(df=df_sdiff_meth1, authors=authors, title=title, DOI=DOI, water=comp1, second_compound=comp2, property1="Tracer diffusion coefficient", property2="Tracer diffusion coefficient", df2=df_sdiff_meth2)
     
     def readViscGlyc(self, txt_file: str):
         df_visc_glyc = pd.read_csv(f"{self.folder_txt_files}{txt_file}", sep=" ", index_col=False)
@@ -145,8 +145,14 @@ class ExperimentThermoML(BaseModel):
             prop1ID = experiment.addProperty(sdiffWat)
             prop2ID = experiment.addProperty(sdiffComp)
             propID = None
+        elif property1 == "Tracer diffusion coefficient" and property2 == "Tracer diffusion coefficient":
+            sdiffWat = TransportProperty.tracerDiffusionCoefficient(ID="p1", method="experiment", compoundID=wat_ID)
+            sdiffComp = TransportProperty.tracerDiffusionCoefficient(ID="p2", method="experiment", compoundID=second_comp_ID)
+            prop1ID = experiment.addProperty(sdiffWat)
+            prop2ID = experiment.addProperty(sdiffComp)
+            propID = None
         else:
-            return "Please define an input property name: Mass Density, Viscosity or Self diffusion coefficient"
+            return "Please define an input property name: Mass Density, Viscosity or Self/Tracer diffusion coefficient"
         
         if propID:
             rows = df.shape[0]
@@ -180,13 +186,16 @@ class ExperimentThermoML(BaseModel):
                 rows1 = df.shape[0]
                 rows2 = df2.shape[0]
                 for i in range(rows1):
+                    
                     # Note: temperatures are hard coded because not stored in read .txt files
                     datapoints = self.__integrateSDiffs(df=df, temp=278.15, dfRowIndex=i, measIndex=i, prop1ID=prop1ID, prop2ID=prop2ID, tempID=tempID, frac1ID=frac1ID, frac2ID=frac2ID)
                     experiment.addMeasurement(dataPoints=datapoints)
                 for j in range(rows2):
                     # Note: temperatures are hard coded because not stored in read .txt files
-                    datapoints = self.__integrateSDiffs(df=df2, temp=298.15, dfRowIndex=j, measIndex=i+j, prop1ID=prop1ID, prop2ID=prop2ID, tempID=tempID, frac1ID=frac1ID, frac2ID=frac2ID)
+                    datapoints = self.__integrateSDiffs(df=df2, temp=298.15, dfRowIndex=j, measIndex=i+j+1, prop1ID=prop1ID, prop2ID=prop2ID, tempID=tempID, frac1ID=frac1ID, frac2ID=frac2ID)
                     experiment.addMeasurement(dataPoints=datapoints)
+                
+                print(experiment.to_string())
                 data_set.addPureOrMixtureData(experiment)
                 
             return data_set

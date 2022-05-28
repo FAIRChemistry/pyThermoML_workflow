@@ -5,7 +5,7 @@
     <nVersionMinor>0</nVersionMinor>
   </Version>
   <Citation>
-    <sTitle>Diffusion Coefficients of Methanol and Water and the Mutual Diffusion Coefficient inMethanol-Water Solutions at 278 and 298 K</sTitle>
+    <sTitle>Diffusion Coefficients of Methanol and Water and the Mutual Diffusion Coefficient in Methanol-Water Solutions at 278 and 298 K</sTitle>
     <sAuthor>Z. J. Derlacki</sAuthor>
     <sAuthor>A. J. Easteal</sAuthor>
     <sAuthor>A. V. J. Edge</sAuthor>
@@ -48,7 +48,7 @@
       <Property-MethodID>
         <PropertyGroup>
           <TransportProp>
-            <ePropName>Self diffusion coefficient, m2/s</ePropName>
+            <ePropName>Tracer diffusion coefficient, m2/s</ePropName>
             <eMethodName>experiment</eMethodName>
           </TransportProp>
         </PropertyGroup>
@@ -65,7 +65,7 @@
       <Property-MethodID>
         <PropertyGroup>
           <TransportProp>
-            <ePropName>Self diffusion coefficient, m2/s</ePropName>
+            <ePropName>Tracer diffusion coefficient, m2/s</ePropName>
             <eMethodName>experiment</eMethodName>
           </TransportProp>
         </PropertyGroup>
@@ -361,6 +361,28 @@
     <NumValues ID="meas11">
       <VariableValue>
         <nVarNumber>v1</nVarNumber>
+        <nVarValue>278.15</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>v2</nVarNumber>
+        <nVarValue>0.0</nVarValue>
+      </VariableValue>
+      <VariableValue>
+        <nVarNumber>v3</nVarNumber>
+        <nVarValue>1.0</nVarValue>
+      </VariableValue>
+      <PropertyValue>
+        <nPropNumber>p1</nPropNumber>
+        <nPropValue>1.4620000000000001e-09</nPropValue>
+      </PropertyValue>
+      <PropertyValue>
+        <nPropNumber>p2</nPropNumber>
+        <nPropValue>1.668e-09</nPropValue>
+      </PropertyValue>
+    </NumValues>
+    <NumValues ID="meas12">
+      <VariableValue>
+        <nVarNumber>v1</nVarNumber>
         <nVarValue>298.15</nVarValue>
       </VariableValue>
       <VariableValue>
@@ -380,7 +402,7 @@
         <nPropValue>1.563e-09</nPropValue>
       </PropertyValue>
     </NumValues>
-    <NumValues ID="meas12">
+    <NumValues ID="meas13">
       <VariableValue>
         <nVarNumber>v1</nVarNumber>
         <nVarValue>298.15</nVarValue>
@@ -402,7 +424,7 @@
         <nPropValue>1.3460000000000001e-09</nPropValue>
       </PropertyValue>
     </NumValues>
-    <NumValues ID="meas13">
+    <NumValues ID="meas14">
       <VariableValue>
         <nVarNumber>v1</nVarNumber>
         <nVarValue>298.15</nVarValue>
@@ -424,7 +446,7 @@
         <nPropValue>1.205e-09</nPropValue>
       </PropertyValue>
     </NumValues>
-    <NumValues ID="meas14">
+    <NumValues ID="meas15">
       <VariableValue>
         <nVarNumber>v1</nVarNumber>
         <nVarValue>298.15</nVarValue>
@@ -446,7 +468,7 @@
         <nPropValue>1.0780000000000002e-09</nPropValue>
       </PropertyValue>
     </NumValues>
-    <NumValues ID="meas15">
+    <NumValues ID="meas16">
       <VariableValue>
         <nVarNumber>v1</nVarNumber>
         <nVarValue>298.15</nVarValue>
@@ -468,7 +490,7 @@
         <nPropValue>1.068e-09</nPropValue>
       </PropertyValue>
     </NumValues>
-    <NumValues ID="meas16">
+    <NumValues ID="meas17">
       <VariableValue>
         <nVarNumber>v1</nVarNumber>
         <nVarValue>298.15</nVarValue>
@@ -490,7 +512,7 @@
         <nPropValue>1.1290000000000001e-09</nPropValue>
       </PropertyValue>
     </NumValues>
-    <NumValues ID="meas17">
+    <NumValues ID="meas18">
       <VariableValue>
         <nVarNumber>v1</nVarNumber>
         <nVarValue>298.15</nVarValue>
@@ -512,7 +534,7 @@
         <nPropValue>1.2250000000000002e-09</nPropValue>
       </PropertyValue>
     </NumValues>
-    <NumValues ID="meas18">
+    <NumValues ID="meas19">
       <VariableValue>
         <nVarNumber>v1</nVarNumber>
         <nVarValue>298.15</nVarValue>
@@ -534,7 +556,7 @@
         <nPropValue>1.3690000000000001e-09</nPropValue>
       </PropertyValue>
     </NumValues>
-    <NumValues ID="meas19">
+    <NumValues ID="meas20">
       <VariableValue>
         <nVarNumber>v1</nVarNumber>
         <nVarValue>298.15</nVarValue>
@@ -556,7 +578,7 @@
         <nPropValue>1.517e-09</nPropValue>
       </PropertyValue>
     </NumValues>
-    <NumValues ID="meas20">
+    <NumValues ID="meas21">
       <VariableValue>
         <nVarNumber>v1</nVarNumber>
         <nVarValue>298.15</nVarValue>
@@ -578,7 +600,7 @@
         <nPropValue>1.718e-09</nPropValue>
       </PropertyValue>
     </NumValues>
-    <NumValues ID="meas21">
+    <NumValues ID="meas22">
       <VariableValue>
         <nVarNumber>v1</nVarNumber>
         <nVarValue>298.15</nVarValue>
@@ -600,7 +622,7 @@
         <nPropValue>2.0490000000000003e-09</nPropValue>
       </PropertyValue>
     </NumValues>
-    <NumValues ID="meas22">
+    <NumValues ID="meas23">
       <VariableValue>
         <nVarNumber>v1</nVarNumber>
         <nVarValue>298.15</nVarValue>

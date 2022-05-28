@@ -4,6 +4,13 @@
     <nVersionMajor>4</nVersionMajor>
     <nVersionMinor>0</nVersionMinor>
   </Version>
+  <Citation>
+    <sTitle>Integration of simulated and experimentally determined thermophysical properties of aqueous mixtures by ThermoML</sTitle>
+    <sAuthor>Matthias Gueltig</sAuthor>
+    <sAuthor>Jan Range</sAuthor>
+    <sAuthor>Benjamin Schmitz</sAuthor>
+    <sAuthor>Juergen Pleiss</sAuthor>
+  </Citation>
   <Compound>
     <RegNum>
       <nOrgNum>cw</nOrgNum>
@@ -24,7 +31,7 @@
   </Compound>
   <PureOrMixtureData>
     <nPureOrMixtureDataNumber>pom1</nPureOrMixtureDataNumber>
-    <sCompiler>Benjamin Schmitz, Matthias Gueltig</sCompiler>
+    <sCompiler>Matthias Gueltig</sCompiler>
     <Component>
       <RegNum>
         <nOrgNum>cw</nOrgNum>
@@ -64,20 +71,6 @@
         <RegNum>
           <nOrgNum>cc</nOrgNum>
         </RegNum>
-      </Property-MethodID>
-      <PropUncertainty>
-        <nUncertAssessNum>1</nUncertAssessNum>
-      </PropUncertainty>
-    </Property>
-    <Property>
-      <nPropNumber>p3</nPropNumber>
-      <Property-MethodID>
-        <PropertyGroup>
-          <TransportProp>
-            <ePropName>Viscosity, Pa*s</ePropName>
-            <eMethodName>simulation</eMethodName>
-          </TransportProp>
-        </PropertyGroup>
       </Property-MethodID>
       <PropUncertainty>
         <nUncertAssessNum>1</nUncertAssessNum>
@@ -143,10 +136,6 @@
         <nPropNumber>p2</nPropNumber>
         <nPropValue>2.3874585010869094e-09</nPropValue>
       </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.0007071888467872586</nPropValue>
-      </PropertyValue>
     </NumValues>
     <NumValues ID="meas1">
       <VariableValue>
@@ -168,10 +157,6 @@
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>2.0160551043926337e-09</nPropValue>
-      </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.0006887704799941249</nPropValue>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas2">
@@ -195,10 +180,6 @@
         <nPropNumber>p2</nPropNumber>
         <nPropValue>1.7528930056600961e-09</nPropValue>
       </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.0007726975562597882</nPropValue>
-      </PropertyValue>
     </NumValues>
     <NumValues ID="meas3">
       <VariableValue>
@@ -220,10 +201,6 @@
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>1.5638538002514516e-09</nPropValue>
-      </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.000833785359062181</nPropValue>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas4">
@@ -247,10 +224,6 @@
         <nPropNumber>p2</nPropNumber>
         <nPropValue>1.4251556845574753e-09</nPropValue>
       </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.0009118235584694613</nPropValue>
-      </PropertyValue>
     </NumValues>
     <NumValues ID="meas5">
       <VariableValue>
@@ -272,10 +245,6 @@
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>1.302549927737343e-09</nPropValue>
-      </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.0013782652155854773</nPropValue>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas6">
@@ -299,10 +268,6 @@
         <nPropNumber>p2</nPropNumber>
         <nPropValue>1.2227954396788057e-09</nPropValue>
       </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.0018641318078306593</nPropValue>
-      </PropertyValue>
     </NumValues>
     <NumValues ID="meas7">
       <VariableValue>
@@ -324,10 +289,6 @@
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>1.1952768319683685e-09</nPropValue>
-      </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.0015750679941712805</nPropValue>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas8">
@@ -351,10 +312,6 @@
         <nPropNumber>p2</nPropNumber>
         <nPropValue>1.2487007091378347e-09</nPropValue>
       </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.000986900204087134</nPropValue>
-      </PropertyValue>
     </NumValues>
     <NumValues ID="meas9">
       <VariableValue>
@@ -376,10 +333,6 @@
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>1.3333637443788797e-09</nPropValue>
-      </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.0012217275394995454</nPropValue>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas10">
@@ -403,10 +356,6 @@
         <nPropNumber>p2</nPropNumber>
         <nPropValue>nan</nPropValue>
       </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.0011372337196137994</nPropValue>
-      </PropertyValue>
     </NumValues>
     <NumValues ID="meas11">
       <VariableValue>
@@ -428,10 +377,6 @@
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>2.9327887901330805e-09</nPropValue>
-      </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.00046935605369110086</nPropValue>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas12">
@@ -455,10 +400,6 @@
         <nPropNumber>p2</nPropNumber>
         <nPropValue>2.5277362163898144e-09</nPropValue>
       </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.00046211483580014325</nPropValue>
-      </PropertyValue>
     </NumValues>
     <NumValues ID="meas13">
       <VariableValue>
@@ -480,10 +421,6 @@
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>2.2365546194845813e-09</nPropValue>
-      </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.00047033256309937286</nPropValue>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas14">
@@ -507,10 +444,6 @@
         <nPropNumber>p2</nPropNumber>
         <nPropValue>1.9656483492374557e-09</nPropValue>
       </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.0007521046591337266</nPropValue>
-      </PropertyValue>
     </NumValues>
     <NumValues ID="meas15">
       <VariableValue>
@@ -532,10 +465,6 @@
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>1.8323833327132792e-09</nPropValue>
-      </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.0006719134455931484</nPropValue>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas16">
@@ -559,10 +488,6 @@
         <nPropNumber>p2</nPropNumber>
         <nPropValue>1.696534614893828e-09</nPropValue>
       </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.0008082939148908925</nPropValue>
-      </PropertyValue>
     </NumValues>
     <NumValues ID="meas17">
       <VariableValue>
@@ -584,10 +509,6 @@
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>1.5849258569656993e-09</nPropValue>
-      </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.0013144866014498681</nPropValue>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas18">
@@ -611,10 +532,6 @@
         <nPropNumber>p2</nPropNumber>
         <nPropValue>1.5778392766148912e-09</nPropValue>
       </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.0008820871159007152</nPropValue>
-      </PropertyValue>
     </NumValues>
     <NumValues ID="meas19">
       <VariableValue>
@@ -636,10 +553,6 @@
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>1.5564004706922788e-09</nPropValue>
-      </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.0014019718996268738</nPropValue>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas20">
@@ -663,10 +576,6 @@
         <nPropNumber>p2</nPropNumber>
         <nPropValue>1.711328163931795e-09</nPropValue>
       </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.0009736863056344925</nPropValue>
-      </PropertyValue>
     </NumValues>
     <NumValues ID="meas21">
       <VariableValue>
@@ -688,10 +597,6 @@
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>nan</nPropValue>
-      </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.0007098929106898182</nPropValue>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas22">
@@ -715,10 +620,6 @@
         <nPropNumber>p2</nPropNumber>
         <nPropValue>3.4843559383298387e-09</nPropValue>
       </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.0005330815557381189</nPropValue>
-      </PropertyValue>
     </NumValues>
     <NumValues ID="meas23">
       <VariableValue>
@@ -740,10 +641,6 @@
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>3.0824290124406613e-09</nPropValue>
-      </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.00038437694670778256</nPropValue>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas24">
@@ -767,10 +664,6 @@
         <nPropNumber>p2</nPropNumber>
         <nPropValue>2.72690967697037e-09</nPropValue>
       </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.00046315829311919566</nPropValue>
-      </PropertyValue>
     </NumValues>
     <NumValues ID="meas25">
       <VariableValue>
@@ -792,10 +685,6 @@
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>2.432248893475742e-09</nPropValue>
-      </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.0006332082616206481</nPropValue>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas26">
@@ -819,10 +708,6 @@
         <nPropNumber>p2</nPropNumber>
         <nPropValue>2.2325379762808793e-09</nPropValue>
       </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.0008419562163962678</nPropValue>
-      </PropertyValue>
     </NumValues>
     <NumValues ID="meas27">
       <VariableValue>
@@ -844,10 +729,6 @@
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>2.149036448139356e-09</nPropValue>
-      </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.0006041252842117284</nPropValue>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas28">
@@ -871,10 +752,6 @@
         <nPropNumber>p2</nPropNumber>
         <nPropValue>2.0541549140740293e-09</nPropValue>
       </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.000636616350134146</nPropValue>
-      </PropertyValue>
     </NumValues>
     <NumValues ID="meas29">
       <VariableValue>
@@ -896,10 +773,6 @@
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>1.9932663066637746e-09</nPropValue>
-      </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.0007465757546322691</nPropValue>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas30">
@@ -923,10 +796,6 @@
         <nPropNumber>p2</nPropNumber>
         <nPropValue>2.056655063064266e-09</nPropValue>
       </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.0005496698432591037</nPropValue>
-      </PropertyValue>
     </NumValues>
     <NumValues ID="meas31">
       <VariableValue>
@@ -949,10 +818,6 @@
         <nPropNumber>p2</nPropNumber>
         <nPropValue>2.233324048995705e-09</nPropValue>
       </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.0004999104993183243</nPropValue>
-      </PropertyValue>
     </NumValues>
     <NumValues ID="meas32">
       <VariableValue>
@@ -974,10 +839,6 @@
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>nan</nPropValue>
-      </PropertyValue>
-      <PropertyValue>
-        <nPropNumber>p3</nPropNumber>
-        <nPropValue>0.0008052669775728672</nPropValue>
       </PropertyValue>
     </NumValues>
   </PureOrMixtureData>

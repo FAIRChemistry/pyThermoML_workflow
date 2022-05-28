@@ -4,6 +4,13 @@
     <nVersionMajor>4</nVersionMajor>
     <nVersionMinor>0</nVersionMinor>
   </Version>
+  <Citation>
+    <sTitle>Integration of simulated and experimentally determined thermophysical properties of aqueous mixtures by ThermoML</sTitle>
+    <sAuthor>Matthias Gueltig</sAuthor>
+    <sAuthor>Jan Range</sAuthor>
+    <sAuthor>Benjamin Schmitz</sAuthor>
+    <sAuthor>Juergen Pleiss</sAuthor>
+  </Citation>
   <Compound>
     <RegNum>
       <nOrgNum>cw</nOrgNum>
@@ -22,7 +29,7 @@
   </Compound>
   <PureOrMixtureData>
     <nPureOrMixtureDataNumber>pom1</nPureOrMixtureDataNumber>
-    <sCompiler>Benjamin Schmitz, Matthias Gueltig</sCompiler>
+    <sCompiler>Matthias Gueltig</sCompiler>
     <Component>
       <RegNum>
         <nOrgNum>cw</nOrgNum>

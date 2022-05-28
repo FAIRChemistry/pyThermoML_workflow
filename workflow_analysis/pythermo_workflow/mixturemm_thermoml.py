@@ -42,7 +42,14 @@ class MixtureMMThermoML(BaseModel):
         json_data = json.load(open(f"{self.folder_mixtureMM_files}{json_file}"))
         
         # create data report
-        data_set = DataReport()
+        title = "Integration of simulated and experimentally determined thermophysical properties of aqueous mixtures by ThermoML"
+        authors = {
+            "author1": "Matthias Gueltig",
+            "author2": "Jan Range",
+            "author3": "Benjamin Schmitz",
+            "author4": "Juergen Pleiss"
+        } 
+        data_set = DataReport(title=title, authors=authors)
         data_set = self.__addCompounds(json_data=json_data, data_set=data_set)
         data_set = self.__addExperiment(json_data=json_data, data_set=data_set)
         
@@ -63,7 +70,7 @@ class MixtureMMThermoML(BaseModel):
     def __addExperiment(self, json_data:dict, data_set: DataReport) -> DataReport:
         comps = data_set.getCompoundIDs()
 
-        experiment = PureOrMixtureData(ID="pom1", compiler="Benjamin Schmitz, Matthias Gueltig", comps=comps)
+        experiment = PureOrMixtureData(ID="pom1", compiler="Matthias Gueltig", comps=comps)
 
         experiment.addVariable(TemperatureBase.temperature(ID="v1"))
         experiment.addVariable(ComponentCompositionBase.moleFraction('v2', comps[0]))
@@ -99,9 +106,24 @@ class MixtureMMThermoML(BaseModel):
         result_df = self.regression(df)
         self.vis_regression(df, result_df, 298.15, 0.5)
     
-    def create_data_report(self, result_df) -> DataReport:
-        dataReport = DataReport()
+    def create_data_report(self, result_df:pd.DataFrame) -> DataReport:
+        """integrates generated data frame into DataReport object
 
+        Args:
+            result_df (pd.DataFrame): pandas dataframe with self-diffusion coefficient data and viscosity data
+
+        Returns:
+            DataReport: DataReport object representation of pandas dataframe. Due to less replica number viscosities won't be integrated
+        """
+        title = "Integration of simulated and experimentally determined thermophysical properties of aqueous mixtures by ThermoML"
+        authors = {
+            "author1": "Matthias Gueltig",
+            "author2": "Jan Range",
+            "author3": "Benjamin Schmitz",
+            "author4": "Juergen Pleiss"
+        } 
+
+        dataReport = DataReport(title=title, authors=authors)
         comp1 = Compound(ID="cw", standardInchI="InChI=1S/H2O/h1H2", standardInchIKey="XLYOFNOQVPJJNP-UHFFFAOYSA-N", smiles="O", commonName="water")
         comp2 = Compound(ID="cc", standardInchI="InChI=1S/CH4O/c1-2/h2H,1H3", standardInchIKey="OKKJLVBELUTLKV-UHFFFAOYSA-N", smiles="CO", commonName="methanol")
 
@@ -110,18 +132,18 @@ class MixtureMMThermoML(BaseModel):
 
         comps = [comp1ID, comp2ID]
 
-        experiment = PureOrMixtureData(ID="pom1", compiler="Benjamin Schmitz, Matthias Gueltig", comps=comps)
+        experiment = PureOrMixtureData(ID="pom1", compiler="Matthias Gueltig", comps=comps)
             
         temp = TemperatureBase.temperature(ID="v1")
         frac1 = ComponentCompositionBase.moleFraction('v2', comp1ID)
         frac2 = ComponentCompositionBase.moleFraction('v3', comp2ID)
         sdiffWat = TransportProperty.selfDiffusionCoefficient(ID="p1", method="simulation", compoundID=comp1ID)
         sdiffMet = TransportProperty.selfDiffusionCoefficient(ID="p2", method="simulation", compoundID=comp2ID)
-        visc = TransportProperty.viscosity(ID = "p3", method="simulation")
+        #visc = TransportProperty.viscosity(ID = "p3", method="simulation")
 
         sdiffWatID = experiment.addProperty(sdiffWat)
         sdiffMetID = experiment.addProperty(sdiffMet)
-        viscID = experiment.addProperty(visc)
+        #viscID = experiment.addProperty(visc)
 
         tempID = experiment.addVariable(temp)
         frac1ID = experiment.addVariable(frac1)
@@ -131,11 +153,11 @@ class MixtureMMThermoML(BaseModel):
             measurementID = f"meas{counter}"
             sdiffWatDataPoint = DataPoint(measurementID=measurementID, value=rows["sdiffWat"], propID = sdiffWatID)
             sdiffMetDataPoint = DataPoint(measurementID = measurementID, value=rows["sdiffComp"], propID = sdiffMetID)
-            viscDataPoint = DataPoint(measurementID=measurementID, value= rows["visc"], propID = viscID)
+            #viscDataPoint = DataPoint(measurementID=measurementID, value= rows["visc"], propID = viscID)
             tempDataPoint = DataPoint(measurementID=measurementID, value=rows["temp"], varID = tempID)
             frac1DataPoint = DataPoint(measurementID=measurementID, value=rows["xw"], varID = frac1ID)
             frac2DataPoint = DataPoint(measurementID=measurementID, value=1-rows["xw"], varID = frac2ID)
-            datapoints = [sdiffWatDataPoint, sdiffMetDataPoint, viscDataPoint, tempDataPoint, frac1DataPoint, frac2DataPoint]
+            datapoints = [sdiffWatDataPoint, sdiffMetDataPoint, tempDataPoint, frac1DataPoint, frac2DataPoint]
             experiment.addMeasurement(dataPoints=datapoints)
 
         dataReport.addPureOrMixtureData(experiment)

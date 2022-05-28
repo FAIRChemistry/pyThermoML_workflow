@@ -51,7 +51,7 @@ class Analysis(BaseModel):
             df["method"] = pom.properties["p1"].method
 
         for propID, prop in pom.properties.items():
-            if "Self diffusion coefficient" == prop.propName:
+            if "Self diffusion coefficient" == prop.propName or "Tracer diffusion coefficient" == prop.propName:
                 nameNew = f"Sdiff{prop.compoundID}"
             else:
                 nameNew = prop.propName
