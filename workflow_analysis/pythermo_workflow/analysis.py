@@ -35,17 +35,23 @@ class Analysis(BaseModel):
             
             for key, prop in pom.properties.items():
                 df[key] = ""
-
+                if pom.measurements["meas1"].properties[key].uncertainty:
+                    df[f"{key}_uncert"] = ""
+                
             for key, var in pom.variables.items():
                 df[key] = ""
-        
+
             for i, meas in enumerate(pom.measurements.values()):
                 datarow = []
-                for elem in df.columns:
-                    if elem.startswith("p"):
-                        datarow.append(meas.properties[elem].value)
-                    elif elem.startswith("v"):
-                        datarow.append(meas.variables[elem].value)
+                for propID in pom.properties.keys():
+
+                    datarow.append(meas.properties[propID].value)
+                    if meas.properties[propID].uncertainty:
+                        datarow.append(meas.properties[propID].uncertainty)
+                
+                for varID in pom.variables.keys():
+                    datarow.append(meas.variables[varID].value)
+
                 df.loc[i] = datarow
             
             df["method"] = pom.properties["p1"].method

@@ -195,7 +195,6 @@ class ExperimentThermoML(BaseModel):
                     datapoints = self.__integrateSDiffs(df=df2, temp=298.15, dfRowIndex=j, measIndex=i+j+1, prop1ID=prop1ID, prop2ID=prop2ID, tempID=tempID, frac1ID=frac1ID, frac2ID=frac2ID)
                     experiment.addMeasurement(dataPoints=datapoints)
                 
-                print(experiment.to_string())
                 data_set.addPureOrMixtureData(experiment)
                 
             return data_set

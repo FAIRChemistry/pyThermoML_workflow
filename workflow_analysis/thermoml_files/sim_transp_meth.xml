@@ -131,10 +131,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>nan</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>nan</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>2.3874585010869094e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>2.1733620101943575e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas1">
@@ -153,10 +161,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>1.6692977751294194e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>2.97647061262497e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>2.0160551043926337e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>1.8020309972861733e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas2">
@@ -175,10 +191,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>1.4951057476407267e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>2.277838971508511e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>1.7528930056600961e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>1.714938239599969e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas3">
@@ -197,10 +221,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>1.3745988108539354e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>1.8300271871689575e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>1.5638538002514516e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>1.7676098979421647e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas4">
@@ -219,10 +251,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>1.3119937973023795e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>1.7250061954434228e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>1.4251556845574753e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>1.6036349293761717e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas5">
@@ -241,10 +281,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>1.24186054396731e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>1.666295321242642e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>1.302549927737343e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>1.7939749651558458e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas6">
@@ -263,10 +311,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>1.2287333586478085e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>1.3324595913430346e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>1.2227954396788057e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>1.4967889508757136e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas7">
@@ -285,10 +341,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>1.2755630901400237e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>1.8071579017157108e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>1.1952768319683685e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>1.8519174602885374e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas8">
@@ -307,10 +371,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>1.4255066150781087e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>1.8094256319520283e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>1.2487007091378347e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>2.2091756653616456e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas9">
@@ -329,10 +401,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>1.6340925660329331e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>2.0162731977577904e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>1.3333637443788797e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>2.514608258041659e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas10">
@@ -351,10 +431,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>2.1821268171818644e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>2.753615834299693e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>nan</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>nan</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas11">
@@ -373,10 +461,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>nan</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>nan</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>2.9327887901330805e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>2.577314575820726e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas12">
@@ -395,10 +491,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>2.1289022366275507e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>3.374092942150735e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>2.5277362163898144e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>2.245441834727304e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas13">
@@ -417,10 +521,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>1.949852239248465e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>2.5099643372025505e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>2.2365546194845813e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>2.0353996207214966e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas14">
@@ -439,10 +551,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>1.762384241476424e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>2.2431338563924037e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>1.9656483492374557e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>2.096648444956019e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas15">
@@ -461,10 +581,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>1.7116281434248398e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>2.2801808892219034e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>1.8323833327132792e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>2.0907240959269632e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas16">
@@ -483,10 +611,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>1.649313371372285e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>1.8414550235582545e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>1.696534614893828e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>1.7904583642947337e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas17">
@@ -505,10 +641,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>1.6137378894437514e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>1.9696821118918923e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>1.5849258569656993e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>1.9281933180002745e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas18">
@@ -527,10 +671,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>1.7035737828446212e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>1.9990121323780123e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>1.5778392766148912e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>2.084837166373924e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas19">
@@ -549,10 +701,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>1.8038147202334853e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>2.6062511515917783e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>1.5564004706922788e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>2.6054389859348575e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas20">
@@ -571,10 +731,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>2.1178607768994335e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>2.6239848119778914e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>1.711328163931795e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>3.598754829944838e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas21">
@@ -593,10 +761,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>2.7601325527577404e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>3.587769120757225e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>nan</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>nan</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas22">
@@ -615,10 +791,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>nan</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>nan</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>3.4843559383298387e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>3.0193259003230834e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas23">
@@ -637,10 +821,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>2.6460201210417803e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>3.8130567297738174e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>3.0824290124406613e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>2.7341873910156142e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas24">
@@ -659,10 +851,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>2.420282223533835e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>3.186073547818497e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>2.72690967697037e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>2.5570076221924833e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas25">
@@ -681,10 +881,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>2.2284011833473325e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>3.061768922909456e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>2.432248893475742e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>2.172224062879497e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas26">
@@ -703,10 +911,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>2.113734403250474e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>2.5817603553988712e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>2.2325379762808793e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>2.3768071677164187e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas27">
@@ -725,10 +941,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>2.1161024121107622e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>2.263275573086061e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>2.149036448139356e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>2.417400697003977e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas28">
@@ -747,10 +971,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>2.1173630171611145e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>2.5656437041965383e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>2.0541549140740293e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>2.5745015644834142e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas29">
@@ -769,10 +1001,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>2.162566657592295e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>2.667764512320638e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>1.9932663066637746e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>2.6881855072429576e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas30">
@@ -791,10 +1031,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>2.372827371761075e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>2.801748290064016e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>2.056655063064266e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>3.086822242801186e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas31">
@@ -813,10 +1061,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>2.728694687474858e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>3.480845888489899e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>2.233324048995705e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>3.8607350648644086e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
     <NumValues ID="meas32">
@@ -835,10 +1091,18 @@
       <PropertyValue>
         <nPropNumber>p1</nPropNumber>
         <nPropValue>3.3483082686353517e-09</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>3.5998896296277304e-11</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
       <PropertyValue>
         <nPropNumber>p2</nPropNumber>
         <nPropValue>nan</nPropValue>
+        <PropUncertainty>
+          <nUncertAssessNum>1</nUncertAssessNum>
+          <nStdUncertValue>nan</nStdUncertValue>
+        </PropUncertainty>
       </PropertyValue>
     </NumValues>
   </PureOrMixtureData>

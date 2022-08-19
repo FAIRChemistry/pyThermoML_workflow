@@ -33,7 +33,7 @@
             "pressure_s_in_bar": [
                 1
             ],
-            "number_of_replicas": 20,
+            "number_of_replicas": 1,
             "replica_starting_number": 1
         },
         "hardware_settings": {
@@ -124,7 +124,9 @@
                 "Glycerol"
             ],
             "density": 1.2300446339762834,
-            "volume": 87.02831020048656
+            "stdev_density": 0.0032055256750626398,
+            "volume": 87.02831020048657,
+            "stdev_volume": 0.22670101950550825
         },
         {
             "total_number_molecules": 700,
@@ -135,7 +137,9 @@
                 "Glycerol"
             ],
             "density": 1.22965497864167,
-            "volume": 87.05621283956002
+            "stdev_density": 0.003989290221997286,
+            "volume": 87.05621283956002,
+            "stdev_volume": 0.2823417518280913
         },
         {
             "total_number_molecules": 700,
@@ -146,7 +150,9 @@
                 "Glycerol"
             ],
             "density": 1.2245466730819452,
-            "volume": 87.41925037107295
+            "stdev_density": 0.0036909706270562568,
+            "volume": 87.41925037107293,
+            "stdev_volume": 0.2636110768490538
         },
         {
             "total_number_molecules": 700,
@@ -156,8 +162,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 1.2200723706232368,
-            "volume": 87.73992013674226
+            "density": 1.220072370623237,
+            "stdev_density": 0.0038625522984367397,
+            "volume": 87.73992013674224,
+            "stdev_volume": 0.277834802439713
         },
         {
             "total_number_molecules": 700,
@@ -168,7 +176,9 @@
                 "Glycerol"
             ],
             "density": 1.2255112352290787,
-            "volume": 80.32412179556701
+            "stdev_density": 0.0036461626408804196,
+            "volume": 80.32412179556701,
+            "stdev_volume": 0.2391461515286571
         },
         {
             "total_number_molecules": 700,
@@ -179,7 +189,9 @@
                 "Glycerol"
             ],
             "density": 1.2253958202804807,
-            "volume": 80.33163318298415
+            "stdev_density": 0.0035061150889447584,
+            "volume": 80.33163318298415,
+            "stdev_volume": 0.22981865170305296
         },
         {
             "total_number_molecules": 700,
@@ -189,8 +201,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 1.2213799513919819,
-            "volume": 80.5958321697197
+            "density": 1.221379951391982,
+            "stdev_density": 0.0036760876820606343,
+            "volume": 80.5958321697197,
+            "stdev_volume": 0.24260173370952162
         },
         {
             "total_number_molecules": 700,
@@ -201,7 +215,9 @@
                 "Glycerol"
             ],
             "density": 1.2161738084560552,
-            "volume": 80.94095416421558
+            "stdev_density": 0.003928600433340056,
+            "volume": 80.94095416421558,
+            "stdev_volume": 0.26135481264886445
         },
         {
             "total_number_molecules": 700,
@@ -212,7 +228,9 @@
                 "Glycerol"
             ],
             "density": 1.2234212173660566,
-            "volume": 73.42315616344816
+            "stdev_density": 0.003963544960424555,
+            "volume": 73.42315616344816,
+            "stdev_volume": 0.23787841449797817
         },
         {
             "total_number_molecules": 700,
@@ -223,7 +241,9 @@
                 "Glycerol"
             ],
             "density": 1.2181356523782818,
-            "volume": 73.74164131565458
+            "stdev_density": 0.0036760149043229065,
+            "volume": 73.74164131565458,
+            "stdev_volume": 0.22254371753493768
         },
         {
             "total_number_molecules": 700,
@@ -234,7 +254,9 @@
                 "Glycerol"
             ],
             "density": 1.2153383020961035,
-            "volume": 73.9114381330051
+            "stdev_density": 0.0038404874094984916,
+            "volume": 73.9114381330051,
+            "stdev_volume": 0.23368500143963175
         },
         {
             "total_number_molecules": 700,
@@ -245,7 +267,9 @@
                 "Glycerol"
             ],
             "density": 1.2128280671136724,
-            "volume": 74.06445874064669
+            "stdev_density": 0.00394470367055738,
+            "volume": 74.06445874064667,
+            "stdev_volume": 0.24085044378700546
         },
         {
             "total_number_molecules": 700,
@@ -256,7 +280,9 @@
                 "Glycerol"
             ],
             "density": 1.2158624565577845,
-            "volume": 66.79786651603858
+            "stdev_density": 0.004771586814406943,
+            "volume": 66.79786651603858,
+            "stdev_volume": 0.2622544319209978
         },
         {
             "total_number_molecules": 700,
@@ -266,8 +292,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 1.2137493629343716,
-            "volume": 66.91386602470412
+            "density": 1.2137493629343719,
+            "stdev_density": 0.004030113232927083,
+            "volume": 66.91386602470412,
+            "stdev_volume": 0.22219890152764651
         },
         {
             "total_number_molecules": 700,
@@ -278,7 +306,9 @@
                 "Glycerol"
             ],
             "density": 1.2102947021359138,
-            "volume": 67.10504779032239
+            "stdev_density": 0.004489546933437701,
+            "volume": 67.10504779032239,
+            "stdev_volume": 0.24882112435324324
         },
         {
             "total_number_molecules": 700,
@@ -289,7 +319,9 @@
                 "Glycerol"
             ],
             "density": 1.206321393854581,
-            "volume": 67.32593562517309
+            "stdev_density": 0.004124457170467095,
+            "volume": 67.32593562517309,
+            "stdev_volume": 0.23027088205080765
         },
         {
             "total_number_molecules": 700,
@@ -300,7 +332,9 @@
                 "Glycerol"
             ],
             "density": 1.2097987096740457,
-            "volume": 60.0148815254871
+            "stdev_density": 0.0042509011301444044,
+            "volume": 60.0148815254871,
+            "stdev_volume": 0.21100140585508412
         },
         {
             "total_number_molecules": 700,
@@ -311,7 +345,9 @@
                 "Glycerol"
             ],
             "density": 1.2067932348231545,
-            "volume": 60.16427763131577
+            "stdev_density": 0.004040153526654437,
+            "volume": 60.16427763131577,
+            "stdev_volume": 0.2014583409697859
         },
         {
             "total_number_molecules": 700,
@@ -322,7 +358,9 @@
                 "Glycerol"
             ],
             "density": 1.202416163880817,
-            "volume": 60.38344756035288
+            "stdev_density": 0.004471598498205533,
+            "volume": 60.38344756035287,
+            "stdev_volume": 0.22455396516460838
         },
         {
             "total_number_molecules": 700,
@@ -333,7 +371,9 @@
                 "Glycerol"
             ],
             "density": 1.199399548270898,
-            "volume": 60.53543115237192
+            "stdev_density": 0.004751207454685169,
+            "volume": 60.53543115237193,
+            "stdev_volume": 0.23984240194937786
         },
         {
             "total_number_molecules": 700,
@@ -344,7 +384,9 @@
                 "Glycerol"
             ],
             "density": 1.1990984473679933,
-            "volume": 53.36960103091551
+            "stdev_density": 0.005002765637659753,
+            "volume": 53.369601030915504,
+            "stdev_volume": 0.22267374939487788
         },
         {
             "total_number_molecules": 700,
@@ -355,7 +397,9 @@
                 "Glycerol"
             ],
             "density": 1.1970092861398067,
-            "volume": 53.462750281358566
+            "stdev_density": 0.004999225644858523,
+            "volume": 53.46275028135856,
+            "stdev_volume": 0.22339453022186917
         },
         {
             "total_number_molecules": 700,
@@ -366,7 +410,9 @@
                 "Glycerol"
             ],
             "density": 1.1937329924769473,
-            "volume": 53.60953259671437
+            "stdev_density": 0.005117228018051668,
+            "volume": 53.609532596714374,
+            "stdev_volume": 0.22981871986012412
         },
         {
             "total_number_molecules": 700,
@@ -377,7 +423,9 @@
                 "Glycerol"
             ],
             "density": 1.1896809392094323,
-            "volume": 53.792206676037246
+            "stdev_density": 0.005300379349480687,
+            "volume": 53.792206676037246,
+            "stdev_volume": 0.239840526895636
         },
         {
             "total_number_molecules": 700,
@@ -388,7 +436,9 @@
                 "Glycerol"
             ],
             "density": 1.1871448030689886,
-            "volume": 46.65358153315667
+            "stdev_density": 0.005048912800519296,
+            "volume": 46.65358153315666,
+            "stdev_volume": 0.19857308269235374
         },
         {
             "total_number_molecules": 700,
@@ -398,8 +448,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 1.1830482393946358,
-            "volume": 46.81511449256566
+            "density": 1.183048239394636,
+            "stdev_density": 0.00499075551145176,
+            "volume": 46.81511449256566,
+            "stdev_volume": 0.19726310330374028
         },
         {
             "total_number_molecules": 700,
@@ -410,7 +462,9 @@
                 "Glycerol"
             ],
             "density": 1.1792921620357877,
-            "volume": 46.96430082469839
+            "stdev_density": 0.0052025198652188385,
+            "volume": 46.96430082469839,
+            "stdev_volume": 0.20712849182485765
         },
         {
             "total_number_molecules": 700,
@@ -421,7 +475,9 @@
                 "Glycerol"
             ],
             "density": 1.175391739916272,
-            "volume": 47.12012207773578
+            "stdev_density": 0.005112540630617014,
+            "volume": 47.12012207773578,
+            "stdev_volume": 0.20498612453695017
         },
         {
             "total_number_molecules": 700,
@@ -432,7 +488,9 @@
                 "Glycerol"
             ],
             "density": 1.1674163160401716,
-            "volume": 40.171430368375894
+            "stdev_density": 0.005271143375982821,
+            "volume": 40.171430368375894,
+            "stdev_volume": 0.18134790631751255
         },
         {
             "total_number_molecules": 700,
@@ -443,7 +501,9 @@
                 "Glycerol"
             ],
             "density": 1.1644035479844752,
-            "volume": 40.27553051944834
+            "stdev_density": 0.005748248507762746,
+            "volume": 40.27553051944834,
+            "stdev_volume": 0.1989016357504714
         },
         {
             "total_number_molecules": 700,
@@ -454,7 +514,9 @@
                 "Glycerol"
             ],
             "density": 1.1597386009502921,
-            "volume": 40.43744587412363
+            "stdev_density": 0.005461525140524158,
+            "volume": 40.437445874123625,
+            "stdev_volume": 0.19034692454063093
         },
         {
             "total_number_molecules": 700,
@@ -465,7 +527,9 @@
                 "Glycerol"
             ],
             "density": 1.1572314294956412,
-            "volume": 40.5251481064884
+            "stdev_density": 0.005723425531981155,
+            "volume": 40.525148106488395,
+            "stdev_volume": 0.20054026020859617
         },
         {
             "total_number_molecules": 700,
@@ -476,7 +540,9 @@
                 "Glycerol"
             ],
             "density": 1.1371088567269187,
-            "volume": 33.561657938486235
+            "stdev_density": 0.006320921731784717,
+            "volume": 33.561657938486235,
+            "stdev_volume": 0.1865587654183788
         },
         {
             "total_number_molecules": 700,
@@ -486,8 +552,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 1.1338487902761092,
-            "volume": 33.65833477772979
+            "density": 1.133848790276109,
+            "stdev_density": 0.006825630436910781,
+            "volume": 33.658334777729785,
+            "stdev_volume": 0.20261260250722915
         },
         {
             "total_number_molecules": 700,
@@ -498,7 +566,9 @@
                 "Glycerol"
             ],
             "density": 1.131421708610585,
-            "volume": 33.730467443538025
+            "stdev_density": 0.006609763443814206,
+            "volume": 33.73046744353802,
+            "stdev_volume": 0.1972656933453435
         },
         {
             "total_number_molecules": 700,
@@ -508,8 +578,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 1.127050074977618,
-            "volume": 33.861233231220886
+            "density": 1.1270500749776182,
+            "stdev_density": 0.006387079201781907,
+            "volume": 33.861233231220886,
+            "stdev_volume": 0.19198235736552385
         },
         {
             "total_number_molecules": 700,
@@ -519,8 +591,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 1.0883446040419331,
-            "volume": 27.15378037462658
+            "density": 1.088344604041933,
+            "stdev_density": 0.007299998741882995,
+            "volume": 27.153780374626585,
+            "stdev_volume": 0.18200269635515676
         },
         {
             "total_number_molecules": 700,
@@ -530,8 +604,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 1.0848787893509302,
-            "volume": 27.240739528799715
+            "density": 1.0848787893509304,
+            "stdev_density": 0.007880014271278251,
+            "volume": 27.24073952879971,
+            "stdev_volume": 0.19782418020872158
         },
         {
             "total_number_molecules": 700,
@@ -542,7 +618,9 @@
                 "Glycerol"
             ],
             "density": 1.082429719576853,
-            "volume": 27.302185828664253
+            "stdev_density": 0.0073307887848006945,
+            "volume": 27.302185828664253,
+            "stdev_volume": 0.18492386451073178
         },
         {
             "total_number_molecules": 700,
@@ -552,8 +630,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 1.0795087773924028,
-            "volume": 27.375969625019845
+            "density": 1.079508777392403,
+            "stdev_density": 0.007038137400058616,
+            "volume": 27.37596962501985,
+            "stdev_volume": 0.17870576277524258
         },
         {
             "total_number_molecules": 700,
@@ -564,7 +644,9 @@
                 "Glycerol"
             ],
             "density": 0.9971967108356672,
-            "volume": 21.001370784387134
+            "stdev_density": 0.009487203734938011,
+            "volume": 21.001370784387134,
+            "stdev_volume": 0.19961809929112145
         },
         {
             "total_number_molecules": 700,
@@ -574,8 +656,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 0.9973786077793563,
-            "volume": 20.997806329369258
+            "density": 0.9973786077793562,
+            "stdev_density": 0.01012105529743177,
+            "volume": 20.997806329369258,
+            "stdev_volume": 0.21331198786483024
         },
         {
             "total_number_molecules": 700,
@@ -585,8 +669,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 0.9959711697031266,
-            "volume": 21.02720416060248
+            "density": 0.9959711697031267,
+            "stdev_density": 0.009448194826749948,
+            "volume": 21.02720416060248,
+            "stdev_volume": 0.19951765298277366
         },
         {
             "total_number_molecules": 700,
@@ -596,8 +682,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 0.9953625208412711,
-            "volume": 21.04009776754619
+            "density": 0.995362520841271,
+            "stdev_density": 0.009533105021380245,
+            "volume": 21.04009776754619,
+            "stdev_volume": 0.2014774682525148
         },
         {
             "total_number_molecules": 3000,
@@ -608,7 +696,9 @@
                 "Glycerol"
             ],
             "density": 1.2316035162395673,
-            "volume": 372.5043756518465
+            "stdev_density": 0.0014597100051888126,
+            "volume": 372.50437565184643,
+            "stdev_volume": 0.4414704073221703
         },
         {
             "total_number_molecules": 3000,
@@ -619,7 +709,9 @@
                 "Glycerol"
             ],
             "density": 1.2275304435885241,
-            "volume": 373.74050101937337
+            "stdev_density": 0.0016092756039096043,
+            "volume": 373.7405010193735,
+            "stdev_volume": 0.49002113918591106
         },
         {
             "total_number_molecules": 3000,
@@ -630,7 +722,9 @@
                 "Glycerol"
             ],
             "density": 1.2237153179431048,
-            "volume": 374.90589753529986
+            "stdev_density": 0.0018381191791098815,
+            "volume": 374.9058975352999,
+            "stdev_volume": 0.5631949984326214
         },
         {
             "total_number_molecules": 3000,
@@ -641,7 +735,9 @@
                 "Glycerol"
             ],
             "density": 1.2205716860181124,
-            "volume": 375.8716212251171
+            "stdev_density": 0.0019773584288426535,
+            "volume": 375.8716212251171,
+            "stdev_volume": 0.6089394386872146
         },
         {
             "total_number_molecules": 3000,
@@ -652,7 +748,9 @@
                 "Glycerol"
             ],
             "density": 1.2275103842760418,
-            "volume": 343.6833317697175
+            "stdev_density": 0.001856090648509485,
+            "volume": 343.6833317697175,
+            "stdev_volume": 0.5198663150636988
         },
         {
             "total_number_molecules": 3000,
@@ -663,7 +761,9 @@
                 "Glycerol"
             ],
             "density": 1.2233070055769377,
-            "volume": 344.8641912208893
+            "stdev_density": 0.0017741381631456753,
+            "volume": 344.8641912208894,
+            "stdev_volume": 0.5001574458101231
         },
         {
             "total_number_molecules": 3000,
@@ -674,7 +774,9 @@
                 "Glycerol"
             ],
             "density": 1.2202270079314457,
-            "volume": 345.7347087169847
+            "stdev_density": 0.001817187923522167,
+            "volume": 345.7347087169847,
+            "stdev_volume": 0.5147621292338662
         },
         {
             "total_number_molecules": 3000,
@@ -685,7 +787,9 @@
                 "Glycerol"
             ],
             "density": 1.2166557635163238,
-            "volume": 346.74958749539553
+            "stdev_density": 0.0018643109723839894,
+            "volume": 346.74958749539553,
+            "stdev_volume": 0.5312399343111699
         },
         {
             "total_number_molecules": 3000,
@@ -696,7 +800,9 @@
                 "Glycerol"
             ],
             "density": 1.223549065097464,
-            "volume": 314.63531226188786
+            "stdev_density": 0.001981208050634195,
+            "volume": 314.63531226188786,
+            "stdev_volume": 0.5093378907279232
         },
         {
             "total_number_molecules": 3000,
@@ -706,8 +812,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 1.2187510314997547,
-            "volume": 315.87378667271
+            "density": 1.2187510314997545,
+            "stdev_density": 0.0017238656671015814,
+            "volume": 315.8737866727101,
+            "stdev_volume": 0.446803763422468
         },
         {
             "total_number_molecules": 3000,
@@ -718,7 +826,9 @@
                 "Glycerol"
             ],
             "density": 1.2155856290031797,
-            "volume": 316.6965734301485
+            "stdev_density": 0.0020270489532955493,
+            "volume": 316.6965734301485,
+            "stdev_volume": 0.5280414973817463
         },
         {
             "total_number_molecules": 3000,
@@ -728,8 +838,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 1.2117703609145571,
-            "volume": 317.69365524042337
+            "density": 1.211770360914557,
+            "stdev_density": 0.0019745983612445553,
+            "volume": 317.69365524042337,
+            "stdev_volume": 0.5176811484534931
         },
         {
             "total_number_molecules": 3000,
@@ -740,7 +852,9 @@
                 "Glycerol"
             ],
             "density": 1.21700836708731,
-            "volume": 286.00340057153295
+            "stdev_density": 0.0020199838396677623,
+            "volume": 286.00340057153295,
+            "stdev_volume": 0.4748082270710614
         },
         {
             "total_number_molecules": 3000,
@@ -751,7 +865,9 @@
                 "Glycerol"
             ],
             "density": 1.2132800437100335,
-            "volume": 286.88223905603127
+            "stdev_density": 0.0019759361767941776,
+            "volume": 286.88223905603127,
+            "stdev_volume": 0.46718576430951897
         },
         {
             "total_number_molecules": 3000,
@@ -762,7 +878,9 @@
                 "Glycerol"
             ],
             "density": 1.2094879407281327,
-            "volume": 287.7817253525961
+            "stdev_density": 0.002002223673323142,
+            "volume": 287.781725352596,
+            "stdev_volume": 0.47645457638841227
         },
         {
             "total_number_molecules": 3000,
@@ -773,7 +891,9 @@
                 "Glycerol"
             ],
             "density": 1.2063253039035786,
-            "volume": 288.5363702458816
+            "stdev_density": 0.0021944676617778798,
+            "volume": 288.53637024588164,
+            "stdev_volume": 0.5250252249524264
         },
         {
             "total_number_molecules": 3000,
@@ -783,8 +903,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 1.2096615245515738,
-            "volume": 257.2334334446146
+            "density": 1.2096615245515736,
+            "stdev_density": 0.002141616466748359,
+            "volume": 257.2334334446146,
+            "stdev_volume": 0.4555089776161728
         },
         {
             "total_number_molecules": 3000,
@@ -794,8 +916,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 1.2067747598503498,
-            "volume": 257.8487612700803
+            "density": 1.20677475985035,
+            "stdev_density": 0.0021249582323983017,
+            "volume": 257.8487612700803,
+            "stdev_volume": 0.4542288351351201
         },
         {
             "total_number_molecules": 3000,
@@ -806,7 +930,9 @@
                 "Glycerol"
             ],
             "density": 1.2027184164567257,
-            "volume": 258.7184211333409
+            "stdev_density": 0.0021538126469140364,
+            "volume": 258.7184211333408,
+            "stdev_volume": 0.4633815422233581
         },
         {
             "total_number_molecules": 3000,
@@ -817,7 +943,9 @@
                 "Glycerol"
             ],
             "density": 1.1989444186951483,
-            "volume": 259.5328339479271
+            "stdev_density": 0.002182070676358045,
+            "volume": 259.5328339479271,
+            "stdev_volume": 0.4724865448879246
         },
         {
             "total_number_molecules": 3000,
@@ -828,7 +956,9 @@
                 "Glycerol"
             ],
             "density": 1.1999252387560655,
-            "volume": 228.56624670160033
+            "stdev_density": 0.0024648465133684885,
+            "volume": 228.56624670160033,
+            "stdev_volume": 0.4694412613036635
         },
         {
             "total_number_molecules": 3000,
@@ -839,7 +969,9 @@
                 "Glycerol"
             ],
             "density": 1.1963653624951849,
-            "volume": 229.2461484807677
+            "stdev_density": 0.0021674733670284563,
+            "volume": 229.2461484807677,
+            "stdev_volume": 0.4154318655599702
         },
         {
             "total_number_molecules": 3000,
@@ -850,7 +982,9 @@
                 "Glycerol"
             ],
             "density": 1.192738348886525,
-            "volume": 229.94340332829262
+            "stdev_density": 0.0023497177429396983,
+            "volume": 229.94340332829265,
+            "stdev_volume": 0.45288891519875796
         },
         {
             "total_number_molecules": 3000,
@@ -861,7 +995,9 @@
                 "Glycerol"
             ],
             "density": 1.1895538785895317,
-            "volume": 230.55904639541234
+            "stdev_density": 0.002442973235063266,
+            "volume": 230.55904639541234,
+            "stdev_volume": 0.4735371086422226
         },
         {
             "total_number_molecules": 3000,
@@ -872,7 +1008,9 @@
                 "Glycerol"
             ],
             "density": 1.1867936193102688,
-            "volume": 200.0004695253267
+            "stdev_density": 0.0026579369937019147,
+            "volume": 200.00046952532668,
+            "stdev_volume": 0.4479845531907284
         },
         {
             "total_number_molecules": 3000,
@@ -883,7 +1021,9 @@
                 "Glycerol"
             ],
             "density": 1.1830100393528538,
-            "volume": 200.64006036316061
+            "stdev_density": 0.0025648401394013564,
+            "volume": 200.6400603631606,
+            "stdev_volume": 0.4348483436298007
         },
         {
             "total_number_molecules": 3000,
@@ -894,7 +1034,9 @@
                 "Glycerol"
             ],
             "density": 1.178880424016671,
-            "volume": 201.34283316818548
+            "stdev_density": 0.002460666737762342,
+            "volume": 201.3428331681855,
+            "stdev_volume": 0.42026577777227503
         },
         {
             "total_number_molecules": 3000,
@@ -904,8 +1046,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 1.1754470948326112,
-            "volume": 201.93114985314432
+            "density": 1.1754470948326114,
+            "stdev_density": 0.002742986661143409,
+            "volume": 201.93114985314426,
+            "stdev_volume": 0.4714184564959349
         },
         {
             "total_number_molecules": 3000,
@@ -916,7 +1060,9 @@
                 "Glycerol"
             ],
             "density": 1.1673595915938377,
-            "volume": 171.71741901773805
+            "stdev_density": 0.00266679837658428,
+            "volume": 171.71741901773802,
+            "stdev_volume": 0.3923790587640587
         },
         {
             "total_number_molecules": 3000,
@@ -927,7 +1073,9 @@
                 "Glycerol"
             ],
             "density": 1.1641014559841065,
-            "volume": 172.19806468684888
+            "stdev_density": 0.0027120744564083973,
+            "volume": 172.19806468684888,
+            "stdev_volume": 0.40120152206556386
         },
         {
             "total_number_molecules": 3000,
@@ -938,7 +1086,9 @@
                 "Glycerol"
             ],
             "density": 1.160137533105366,
-            "volume": 172.78666053962732
+            "stdev_density": 0.0030226375625181214,
+            "volume": 172.7866605396273,
+            "stdev_volume": 0.45008071165017033
         },
         {
             "total_number_molecules": 3000,
@@ -948,8 +1098,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 1.1565666941444939,
-            "volume": 173.32006639540833
+            "density": 1.156566694144494,
+            "stdev_density": 0.0029299497316677484,
+            "volume": 173.32006639540833,
+            "stdev_volume": 0.43909451684917733
         },
         {
             "total_number_molecules": 3000,
@@ -960,7 +1112,9 @@
                 "Glycerol"
             ],
             "density": 1.1370655785409531,
-            "volume": 143.8378076478412
+            "stdev_density": 0.003144111295541655,
+            "volume": 143.8378076478412,
+            "stdev_volume": 0.3978649335715638
         },
         {
             "total_number_molecules": 3000,
@@ -971,7 +1125,9 @@
                 "Glycerol"
             ],
             "density": 1.1339179433353606,
-            "volume": 144.23711188127868
+            "stdev_density": 0.003172580184855022,
+            "volume": 144.2371118812787,
+            "stdev_volume": 0.40352830878617707
         },
         {
             "total_number_molecules": 3000,
@@ -982,7 +1138,9 @@
                 "Glycerol"
             ],
             "density": 1.1306919351773204,
-            "volume": 144.64866069723837
+            "stdev_density": 0.0031944286914008255,
+            "volume": 144.64866069723837,
+            "stdev_volume": 0.4085413464992541
         },
         {
             "total_number_molecules": 3000,
@@ -993,7 +1151,9 @@
                 "Glycerol"
             ],
             "density": 1.1270896465354647,
-            "volume": 145.1107973277959
+            "stdev_density": 0.0029335167325201207,
+            "volume": 145.11079732779586,
+            "stdev_volume": 0.3777735942544986
         },
         {
             "total_number_molecules": 3000,
@@ -1003,8 +1163,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 1.0883039363163294,
-            "volume": 116.37383815520452
+            "density": 1.0883039363163296,
+            "stdev_density": 0.0037418318076832308,
+            "volume": 116.37383815520452,
+            "stdev_volume": 0.4002914639389856
         },
         {
             "total_number_molecules": 3000,
@@ -1015,7 +1177,9 @@
                 "Glycerol"
             ],
             "density": 1.0853122307659164,
-            "volume": 116.69450494927067
+            "stdev_density": 0.003563724207565942,
+            "volume": 116.69450494927068,
+            "stdev_volume": 0.38306408652185797
         },
         {
             "total_number_molecules": 3000,
@@ -1025,8 +1189,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 1.0826238571258753,
-            "volume": 116.98444547602695
+            "density": 1.082623857125875,
+            "stdev_density": 0.0037781703657913165,
+            "volume": 116.98444547602696,
+            "stdev_volume": 0.40846981765068585
         },
         {
             "total_number_molecules": 3000,
@@ -1037,7 +1203,9 @@
                 "Glycerol"
             ],
             "density": 1.079712376474173,
-            "volume": 117.299838292396
+            "stdev_density": 0.0036895638568369346,
+            "volume": 117.29983829239602,
+            "stdev_volume": 0.4008152283895631
         },
         {
             "total_number_molecules": 3000,
@@ -1047,8 +1215,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 0.998615639817531,
-            "volume": 89.87176320912916
+            "density": 0.9986156398175309,
+            "stdev_density": 0.004596000253610094,
+            "volume": 89.87176320912917,
+            "stdev_volume": 0.41356524651638765
         },
         {
             "total_number_molecules": 3000,
@@ -1059,7 +1229,9 @@
                 "Glycerol"
             ],
             "density": 0.9975322311581339,
-            "volume": 89.96940993377879
+            "stdev_density": 0.0046362775945562726,
+            "volume": 89.96940993377879,
+            "stdev_volume": 0.4181501563052756
         },
         {
             "total_number_molecules": 3000,
@@ -1070,7 +1242,9 @@
                 "Glycerol"
             ],
             "density": 0.9971512223932393,
-            "volume": 90.00372729203882
+            "stdev_density": 0.004559116026632185,
+            "volume": 90.00372729203882,
+            "stdev_volume": 0.41216574623442304
         },
         {
             "total_number_molecules": 3000,
@@ -1080,8 +1254,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 0.9953852919993724,
-            "volume": 90.1633857890257
+            "density": 0.9953852919993723,
+            "stdev_density": 0.0045321657517166745,
+            "volume": 90.16338578902568,
+            "stdev_volume": 0.41051250334584294
         },
         {
             "total_number_molecules": 6000,
@@ -1092,7 +1268,9 @@
                 "Glycerol"
             ],
             "density": 1.2305659250806948,
-            "volume": 745.6365296174691
+            "stdev_density": 0.0011467534321140294,
+            "volume": 745.6365296174691,
+            "stdev_volume": 0.6948861095427085
         },
         {
             "total_number_molecules": 6000,
@@ -1103,7 +1281,9 @@
                 "Glycerol"
             ],
             "density": 1.2280631222718719,
-            "volume": 747.1561869985568
+            "stdev_density": 0.0011825446917994196,
+            "volume": 747.1561869985568,
+            "stdev_volume": 0.7195158309288419
         },
         {
             "total_number_molecules": 6000,
@@ -1114,7 +1294,9 @@
                 "Glycerol"
             ],
             "density": 1.224209546890467,
-            "volume": 749.5080743197217
+            "stdev_density": 0.0011649586341484562,
+            "volume": 749.5080743197217,
+            "stdev_volume": 0.7133985046693372
         },
         {
             "total_number_molecules": 6000,
@@ -1124,8 +1306,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 1.2206822288402288,
-            "volume": 751.6738940663869
+            "density": 1.220682228840229,
+            "stdev_density": 0.0011786282571608433,
+            "volume": 751.6738940663868,
+            "stdev_volume": 0.7257590121809159
         },
         {
             "total_number_molecules": 6000,
@@ -1135,8 +1319,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 1.227582288550829,
-            "volume": 687.3255615931404
+            "density": 1.2275822885508287,
+            "stdev_density": 0.001266553892012575,
+            "volume": 687.3255615931404,
+            "stdev_volume": 0.7092024182849327
         },
         {
             "total_number_molecules": 6000,
@@ -1147,7 +1333,9 @@
                 "Glycerol"
             ],
             "density": 1.2239235419190928,
-            "volume": 689.3802676331514
+            "stdev_density": 0.0012994434860710605,
+            "volume": 689.3802676331516,
+            "stdev_volume": 0.7320538324196509
         },
         {
             "total_number_molecules": 6000,
@@ -1158,7 +1346,9 @@
                 "Glycerol"
             ],
             "density": 1.2205580988530425,
-            "volume": 691.2810431397477
+            "stdev_density": 0.0012522292053588507,
+            "volume": 691.2810431397477,
+            "stdev_volume": 0.7092544635776056
         },
         {
             "total_number_molecules": 6000,
@@ -1169,7 +1359,9 @@
                 "Glycerol"
             ],
             "density": 1.2162821200022182,
-            "volume": 693.7114356554094
+            "stdev_density": 0.0013424143614004544,
+            "volume": 693.7114356554093,
+            "stdev_volume": 0.7657945570697996
         },
         {
             "total_number_molecules": 6000,
@@ -1180,7 +1372,9 @@
                 "Glycerol"
             ],
             "density": 1.2223388123680716,
-            "volume": 629.8926753468542
+            "stdev_density": 0.00124462292627201,
+            "volume": 629.8926753468542,
+            "stdev_volume": 0.6414588278385014
         },
         {
             "total_number_molecules": 6000,
@@ -1191,7 +1385,9 @@
                 "Glycerol"
             ],
             "density": 1.2189548994447166,
-            "volume": 631.641521168626
+            "stdev_density": 0.0014306556071139527,
+            "volume": 631.641521168626,
+            "stdev_volume": 0.7413643508373392
         },
         {
             "total_number_molecules": 6000,
@@ -1201,8 +1397,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 1.2159932295750013,
-            "volume": 633.1797826468139
+            "density": 1.2159932295750016,
+            "stdev_density": 0.001286860939855206,
+            "volume": 633.1797826468139,
+            "stdev_volume": 0.670223695406738
         },
         {
             "total_number_molecules": 6000,
@@ -1213,7 +1411,9 @@
                 "Glycerol"
             ],
             "density": 1.2121432122712157,
-            "volume": 635.1909707693242
+            "stdev_density": 0.0013516570320276822,
+            "volume": 635.1909707693242,
+            "stdev_volume": 0.7083249518661454
         },
         {
             "total_number_molecules": 6000,
@@ -1223,8 +1423,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 1.2170243508568568,
-            "volume": 571.9985646854072
+            "density": 1.2170243508568566,
+            "stdev_density": 0.0014851840599477773,
+            "volume": 571.9985646854072,
+            "stdev_volume": 0.6981724582823158
         },
         {
             "total_number_molecules": 6000,
@@ -1235,7 +1437,9 @@
                 "Glycerol"
             ],
             "density": 1.2133488707758022,
-            "volume": 573.7312922581657
+            "stdev_density": 0.0015047011534804736,
+            "volume": 573.7312922581657,
+            "stdev_volume": 0.7115255426053075
         },
         {
             "total_number_molecules": 6000,
@@ -1245,8 +1449,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 1.210109397990275,
-            "volume": 575.2671421077654
+            "density": 1.2101093979902753,
+            "stdev_density": 0.001472005694643304,
+            "volume": 575.2671421077654,
+            "stdev_volume": 0.6997634463862556
         },
         {
             "total_number_molecules": 6000,
@@ -1257,7 +1463,9 @@
                 "Glycerol"
             ],
             "density": 1.2064706075820364,
-            "volume": 577.0022481122076
+            "stdev_density": 0.0015219533015689477,
+            "volume": 577.0022481122077,
+            "stdev_volume": 0.7279499840690257
         },
         {
             "total_number_molecules": 6000,
@@ -1268,7 +1476,9 @@
                 "Glycerol"
             ],
             "density": 1.2096587908065204,
-            "volume": 514.46736592533
+            "stdev_density": 0.001643052192093992,
+            "volume": 514.46736592533,
+            "stdev_volume": 0.6987948684583801
         },
         {
             "total_number_molecules": 6000,
@@ -1278,8 +1488,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 1.2062012647256468,
-            "volume": 515.9419088103492
+            "density": 1.206201264725647,
+            "stdev_density": 0.0014975305425200633,
+            "volume": 515.9419088103491,
+            "stdev_volume": 0.6405757694853303
         },
         {
             "total_number_molecules": 6000,
@@ -1289,8 +1501,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 1.202603488861252,
-            "volume": 517.485580452154
+            "density": 1.2026034888612522,
+            "stdev_density": 0.001628547415606752,
+            "volume": 517.485580452154,
+            "stdev_volume": 0.700543461432044
         },
         {
             "total_number_molecules": 6000,
@@ -1301,7 +1515,9 @@
                 "Glycerol"
             ],
             "density": 1.198928222806098,
-            "volume": 519.0718176467319
+            "stdev_density": 0.001541133103212989,
+            "volume": 519.0718176467319,
+            "stdev_volume": 0.6671723932593935
         },
         {
             "total_number_molecules": 6000,
@@ -1312,7 +1528,9 @@
                 "Glycerol"
             ],
             "density": 1.200350919922733,
-            "volume": 456.96935162475364
+            "stdev_density": 0.0016838452977171396,
+            "volume": 456.96935162475364,
+            "stdev_volume": 0.6409703689373871
         },
         {
             "total_number_molecules": 6000,
@@ -1323,7 +1541,9 @@
                 "Glycerol"
             ],
             "density": 1.1962961579895668,
-            "volume": 458.5181443205295
+            "stdev_density": 0.0016088758505968667,
+            "volume": 458.51814432052953,
+            "stdev_volume": 0.6166418016974542
         },
         {
             "total_number_molecules": 6000,
@@ -1334,7 +1554,9 @@
                 "Glycerol"
             ],
             "density": 1.192798955137162,
-            "volume": 459.862661614173
+            "stdev_density": 0.0017641417484345321,
+            "volume": 459.862661614173,
+            "stdev_volume": 0.6802153245242908
         },
         {
             "total_number_molecules": 6000,
@@ -1345,7 +1567,9 @@
                 "Glycerol"
             ],
             "density": 1.1892447859270507,
-            "volume": 461.2369041958487
+            "stdev_density": 0.0016695794283167573,
+            "volume": 461.23690419584875,
+            "stdev_volume": 0.6475213245881145
         },
         {
             "total_number_molecules": 6000,
@@ -1356,7 +1580,9 @@
                 "Glycerol"
             ],
             "density": 1.186902838271492,
-            "volume": 399.96301754864857
+            "stdev_density": 0.001773185272117886,
+            "volume": 399.96301754864857,
+            "stdev_volume": 0.5976533926585847
         },
         {
             "total_number_molecules": 6000,
@@ -1367,7 +1593,9 @@
                 "Glycerol"
             ],
             "density": 1.1830292245790586,
-            "volume": 401.27255582600816
+            "stdev_density": 0.001699298769787815,
+            "volume": 401.27255582600816,
+            "stdev_volume": 0.576454337994122
         },
         {
             "total_number_molecules": 6000,
@@ -1378,7 +1606,9 @@
                 "Glycerol"
             ],
             "density": 1.1794145595799488,
-            "volume": 402.5023373277212
+            "stdev_density": 0.0016557701143685973,
+            "volume": 402.5023373277212,
+            "stdev_volume": 0.5652392718838957
         },
         {
             "total_number_molecules": 6000,
@@ -1388,8 +1618,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 1.1760264213435745,
-            "volume": 403.6620572988102
+            "density": 1.1760264213435743,
+            "stdev_density": 0.0017604146225135692,
+            "volume": 403.6620572988103,
+            "stdev_volume": 0.6042305389330255
         },
         {
             "total_number_molecules": 6000,
@@ -1399,8 +1631,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 1.1671195419392042,
-            "volume": 343.50468557942094
+            "density": 1.1671195419392044,
+            "stdev_density": 0.0019951423460011536,
+            "volume": 343.50468557942094,
+            "stdev_volume": 0.587251529092591
         },
         {
             "total_number_molecules": 6000,
@@ -1411,7 +1645,9 @@
                 "Glycerol"
             ],
             "density": 1.1634730713396775,
-            "volume": 344.58135435209533
+            "stdev_density": 0.0020683915442839635,
+            "volume": 344.5813543520953,
+            "stdev_volume": 0.612579513718482
         },
         {
             "total_number_molecules": 6000,
@@ -1421,8 +1657,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 1.1603708093256806,
-            "volume": 345.5024453144595
+            "density": 1.1603708093256808,
+            "stdev_density": 0.001915256721503825,
+            "volume": 345.50244531445946,
+            "stdev_volume": 0.5703898852761704
         },
         {
             "total_number_molecules": 6000,
@@ -1432,8 +1670,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 1.1564064065627917,
-            "volume": 346.68704420647276
+            "density": 1.1564064065627915,
+            "stdev_density": 0.002049694986836831,
+            "volume": 346.6870442064727,
+            "stdev_volume": 0.6144187276620224
         },
         {
             "total_number_molecules": 6000,
@@ -1444,7 +1684,9 @@
                 "Glycerol"
             ],
             "density": 1.1368576011102967,
-            "volume": 287.7271401813388
+            "stdev_density": 0.00222041022208704,
+            "volume": 287.7271401813388,
+            "stdev_volume": 0.5620870818680469
         },
         {
             "total_number_molecules": 6000,
@@ -1455,7 +1697,9 @@
                 "Glycerol"
             ],
             "density": 1.1340519259238213,
-            "volume": 288.4390222165138
+            "stdev_density": 0.0022518916841217295,
+            "volume": 288.4390222165139,
+            "stdev_volume": 0.5730144657830314
         },
         {
             "total_number_molecules": 6000,
@@ -1466,7 +1710,9 @@
                 "Glycerol"
             ],
             "density": 1.130592638329899,
-            "volume": 289.3214783534367
+            "stdev_density": 0.0021607787275790768,
+            "volume": 289.3214783534367,
+            "stdev_volume": 0.5531481228149072
         },
         {
             "total_number_molecules": 6000,
@@ -1476,8 +1722,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 1.1276343868316756,
-            "volume": 290.08063744197665
+            "density": 1.1276343868316758,
+            "stdev_density": 0.0023020649596348828,
+            "volume": 290.08063744197665,
+            "stdev_volume": 0.5922754161550678
         },
         {
             "total_number_molecules": 6000,
@@ -1488,7 +1736,9 @@
                 "Glycerol"
             ],
             "density": 1.087471539142165,
-            "volume": 232.92433627664974
+            "stdev_density": 0.002528508841334926,
+            "volume": 232.92433627664974,
+            "stdev_volume": 0.5416335533487326
         },
         {
             "total_number_molecules": 6000,
@@ -1498,8 +1748,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 1.0850390304104618,
-            "volume": 233.44657139779693
+            "density": 1.085039030410462,
+            "stdev_density": 0.0025729927182804005,
+            "volume": 233.44657139779693,
+            "stdev_volume": 0.5536523057069332
         },
         {
             "total_number_molecules": 6000,
@@ -1509,8 +1761,10 @@
             "molecules": [
                 "Glycerol"
             ],
-            "density": 1.0823897447051365,
-            "volume": 234.01785125811932
+            "density": 1.0823897447051363,
+            "stdev_density": 0.0024576027135963015,
+            "volume": 234.01785125811932,
+            "stdev_volume": 0.5311352788848401
         },
         {
             "total_number_molecules": 6000,
@@ -1521,7 +1775,9 @@
                 "Glycerol"
             ],
             "density": 1.0796944167169589,
-            "volume": 234.60211717229123
+            "stdev_density": 0.0025188586448735076,
+            "volume": 234.60211717229126,
+            "stdev_volume": 0.5475153362988526
         },
         {
             "total_number_molecules": 6000,
@@ -1532,7 +1788,9 @@
                 "Glycerol"
             ],
             "density": 0.9987720231156719,
-            "volume": 179.71329864310854
+            "stdev_density": 0.0030912429208055994,
+            "volume": 179.71329864310852,
+            "stdev_volume": 0.5561879752582795
         },
         {
             "total_number_molecules": 6000,
@@ -1543,7 +1801,9 @@
                 "Glycerol"
             ],
             "density": 0.9978969988235467,
-            "volume": 179.871183557904
+            "stdev_density": 0.0033466160956554547,
+            "volume": 179.87118355790403,
+            "stdev_volume": 0.6032209707902795
         },
         {
             "total_number_molecules": 6000,
@@ -1554,7 +1814,9 @@
                 "Glycerol"
             ],
             "density": 0.9967110288350245,
-            "volume": 180.08495072863437
+            "stdev_density": 0.003122748985978579,
+            "volume": 180.08495072863437,
+            "stdev_volume": 0.5639159362471448
         },
         {
             "total_number_molecules": 6000,
@@ -1565,7 +1827,9 @@
                 "Glycerol"
             ],
             "density": 0.9952368441585148,
-            "volume": 180.35183453844962
+            "stdev_density": 0.003232867629321917,
+            "volume": 180.35183453844962,
+            "stdev_volume": 0.5862051896904382
         }
     ],
     "averaged densities": [
@@ -1577,7 +1841,7 @@
                 "Glycerol"
             ],
             "average_density": 1.2307380250988484,
-            "stdev_density": 0.0007935630345988155
+            "stdev_density": 0.0019373297041218273
         },
         {
             "temperature": 288.15,
@@ -1587,7 +1851,7 @@
                 "Glycerol"
             ],
             "average_density": 1.226867969351983,
-            "stdev_density": 0.0011755161276533622
+            "stdev_density": 0.002256269060467493
         },
         {
             "temperature": 288.15,
@@ -1597,7 +1861,7 @@
                 "Glycerol"
             ],
             "average_density": 1.2231030316105307,
-            "stdev_density": 0.0006649131887059577
+            "stdev_density": 0.00239645864577692
         },
         {
             "temperature": 288.15,
@@ -1607,7 +1871,7 @@
                 "Glycerol"
             ],
             "average_density": 1.2166317248339837,
-            "stdev_density": 0.0006662538035892814
+            "stdev_density": 0.0027589182380074943
         },
         {
             "temperature": 288.15,
@@ -1617,7 +1881,7 @@
                 "Glycerol"
             ],
             "average_density": 1.20970634167738,
-            "stdev_density": 8.000470890224057e-05
+            "stdev_density": 0.0026785232629955853
         },
         {
             "temperature": 288.15,
@@ -1627,7 +1891,7 @@
                 "Glycerol"
             ],
             "average_density": 1.1997915353489306,
-            "stdev_density": 0.0006368511018311855
+            "stdev_density": 0.0030504858162484607
         },
         {
             "temperature": 288.15,
@@ -1637,7 +1901,7 @@
                 "Glycerol"
             ],
             "average_density": 1.1869470868835832,
-            "stdev_density": 0.00017972468625967477
+            "stdev_density": 0.003160011688779699
         },
         {
             "temperature": 288.15,
@@ -1646,8 +1910,8 @@
             "molecules": [
                 "Glycerol"
             ],
-            "average_density": 1.167298483191071,
-            "stdev_density": 0.00015754172278403567
+            "average_density": 1.1672984831910713,
+            "stdev_density": 0.0033110280328560848
         },
         {
             "temperature": 288.15,
@@ -1657,7 +1921,7 @@
                 "Glycerol"
             ],
             "average_density": 1.1370106787927228,
-            "stdev_density": 0.00013432361291987674
+            "stdev_density": 0.003895147749804471
         },
         {
             "temperature": 288.15,
@@ -1667,7 +1931,7 @@
                 "Glycerol"
             ],
             "average_density": 1.0880400265001424,
-            "stdev_density": 0.0004927442268678842
+            "stdev_density": 0.004523446463633717
         },
         {
             "temperature": 288.15,
@@ -1676,8 +1940,8 @@
             "molecules": [
                 "Glycerol"
             ],
-            "average_density": 0.9981947912562901,
-            "stdev_density": 0.0008678924636770192
+            "average_density": 0.99819479125629,
+            "stdev_density": 0.005724815636451235
         },
         {
             "temperature": 293.15,
@@ -1687,7 +1951,7 @@
                 "Glycerol"
             ],
             "average_density": 1.2284161815006887,
-            "stdev_density": 0.001105396043190331
+            "stdev_density": 0.0022603701725687703
         },
         {
             "temperature": 293.15,
@@ -1697,7 +1961,7 @@
                 "Glycerol"
             ],
             "average_density": 1.2242087892588371,
-            "stdev_density": 0.0010732246969100544
+            "stdev_density": 0.0021932322460538316
         },
         {
             "temperature": 293.15,
@@ -1707,7 +1971,7 @@
                 "Glycerol"
             ],
             "average_density": 1.2186138611075843,
-            "stdev_density": 0.0004265011445841854
+            "stdev_density": 0.0022768453928461467
         },
         {
             "temperature": 293.15,
@@ -1716,8 +1980,8 @@
             "molecules": [
                 "Glycerol"
             ],
-            "average_density": 1.2134594258067357,
-            "stdev_density": 0.0002534402192468203
+            "average_density": 1.213459425806736,
+            "stdev_density": 0.0025035835210672447
         },
         {
             "temperature": 293.15,
@@ -1726,8 +1990,8 @@
             "molecules": [
                 "Glycerol"
             ],
-            "average_density": 1.2065897531330503,
-            "stdev_density": 0.0003365676205017901
+            "average_density": 1.2065897531330505,
+            "stdev_density": 0.0025542141005242677
         },
         {
             "temperature": 293.15,
@@ -1737,7 +2001,7 @@
                 "Glycerol"
             ],
             "average_density": 1.1965569355415195,
-            "stdev_density": 0.0003932723149772864
+            "stdev_density": 0.0029251916208279487
         },
         {
             "temperature": 293.15,
@@ -1747,7 +2011,7 @@
                 "Glycerol"
             ],
             "average_density": 1.183029167775516,
-            "stdev_density": 1.9100084241140695e-05
+            "stdev_density": 0.0030849648068803103
         },
         {
             "temperature": 293.15,
@@ -1757,7 +2021,7 @@
                 "Glycerol"
             ],
             "average_density": 1.1639926917694197,
-            "stdev_density": 0.0004746777195380409
+            "stdev_density": 0.003509571502818369
         },
         {
             "temperature": 293.15,
@@ -1766,8 +2030,8 @@
             "molecules": [
                 "Glycerol"
             ],
-            "average_density": 1.1339395531784304,
-            "stdev_density": 0.00010327759597793826
+            "average_density": 1.1339395531784302,
+            "stdev_density": 0.004083367435295844
         },
         {
             "temperature": 293.15,
@@ -1776,8 +2040,8 @@
             "molecules": [
                 "Glycerol"
             ],
-            "average_density": 1.0850766835091028,
-            "stdev_density": 0.00021916017415185663
+            "average_density": 1.085076683509103,
+            "stdev_density": 0.004672243732374864
         },
         {
             "temperature": 293.15,
@@ -1786,8 +2050,8 @@
             "molecules": [
                 "Glycerol"
             ],
-            "average_density": 0.9976026125870123,
-            "stdev_density": 0.0002662658029533961
+            "average_density": 0.9976026125870122,
+            "stdev_density": 0.006034649662547832
         },
         {
             "temperature": 298.15,
@@ -1797,7 +2061,7 @@
                 "Glycerol"
             ],
             "average_density": 1.2241571793051724,
-            "stdev_density": 0.00041814425108001253
+            "stdev_density": 0.002231349480104865
         },
         {
             "temperature": 298.15,
@@ -1806,8 +2070,8 @@
             "molecules": [
                 "Glycerol"
             ],
-            "average_density": 1.2207216860588233,
-            "stdev_density": 0.0005936246593763459
+            "average_density": 1.2207216860588235,
+            "stdev_density": 0.0022485016036472173
         },
         {
             "temperature": 298.15,
@@ -1816,8 +2080,8 @@
             "molecules": [
                 "Glycerol"
             ],
-            "average_density": 1.2156390535580948,
-            "stdev_density": 0.00033071609872333294
+            "average_density": 1.215639053558095,
+            "stdev_density": 0.002384799100883082
         },
         {
             "temperature": 298.15,
@@ -1826,8 +2090,8 @@
             "molecules": [
                 "Glycerol"
             ],
-            "average_density": 1.2099640136181071,
-            "stdev_density": 0.00042257360781789284
+            "average_density": 1.2099640136181073,
+            "stdev_density": 0.002654592100468049
         },
         {
             "temperature": 298.15,
@@ -1837,7 +2101,7 @@
                 "Glycerol"
             ],
             "average_density": 1.2025793563995983,
-            "stdev_density": 0.00015256453287037806
+            "stdev_density": 0.002751319520242107
         },
         {
             "temperature": 298.15,
@@ -1847,7 +2111,7 @@
                 "Glycerol"
             ],
             "average_density": 1.1930900988335449,
-            "stdev_density": 0.0005575862775836291
+            "stdev_density": 0.003077029169808633
         },
         {
             "temperature": 298.15,
@@ -1857,7 +2121,7 @@
                 "Glycerol"
             ],
             "average_density": 1.1791957152108026,
-            "stdev_density": 0.00027982439587498673
+            "stdev_density": 0.0031063189057832594
         },
         {
             "temperature": 298.15,
@@ -1866,8 +2130,8 @@
             "molecules": [
                 "Glycerol"
             ],
-            "average_density": 1.1600823144604462,
-            "stdev_density": 0.0003197009251439759
+            "average_density": 1.1600823144604464,
+            "stdev_density": 0.0034664731415153683
         },
         {
             "temperature": 298.15,
@@ -1877,7 +2141,7 @@
                 "Glycerol"
             ],
             "average_density": 1.1309020940392682,
-            "stdev_density": 0.00045272998908912145
+            "stdev_density": 0.003988323620931369
         },
         {
             "temperature": 298.15,
@@ -1886,8 +2150,8 @@
             "molecules": [
                 "Glycerol"
             ],
-            "average_density": 1.082481107135955,
-            "stdev_density": 0.0001252304567941832
+            "average_density": 1.0824811071359548,
+            "stdev_density": 0.004522187288062771
         },
         {
             "temperature": 298.15,
@@ -1897,7 +2161,7 @@
                 "Glycerol"
             ],
             "average_density": 0.9966111403104635,
-            "stdev_density": 0.0005963341142889415
+            "stdev_density": 0.005710019946453571
         },
         {
             "temperature": 303.15,
@@ -1906,8 +2170,8 @@
             "molecules": [
                 "Glycerol"
             ],
-            "average_density": 1.220442095160526,
-            "stdev_density": 0.0003249263054688647
+            "average_density": 1.2204420951605262,
+            "stdev_density": 0.0023395129948134124
         },
         {
             "temperature": 303.15,
@@ -1917,7 +2181,7 @@
                 "Glycerol"
             ],
             "average_density": 1.2163705639915323,
-            "stdev_density": 0.00025285751810847555
+            "stdev_density": 0.002378441922374833
         },
         {
             "temperature": 303.15,
@@ -1927,7 +2191,7 @@
                 "Glycerol"
             ],
             "average_density": 1.2122472134331483,
-            "stdev_density": 0.0005364678761810782
+            "stdev_density": 0.002423653021276539
         },
         {
             "temperature": 303.15,
@@ -1937,7 +2201,7 @@
                 "Glycerol"
             ],
             "average_density": 1.2063724351133986,
-            "stdev_density": 8.504232663570053e-05
+            "stdev_density": 0.0026136260446046407
         },
         {
             "temperature": 303.15,
@@ -1947,7 +2211,7 @@
                 "Glycerol"
             ],
             "average_density": 1.199090729924048,
-            "stdev_density": 0.00026756710414178755
+            "stdev_density": 0.0028248037447520676
         },
         {
             "temperature": 303.15,
@@ -1957,7 +2221,7 @@
                 "Glycerol"
             ],
             "average_density": 1.189493201242005,
-            "stdev_density": 0.0002243183603948053
+            "stdev_density": 0.0031376440042869035
         },
         {
             "temperature": 303.15,
@@ -1967,7 +2231,7 @@
                 "Glycerol"
             ],
             "average_density": 1.1756217520308192,
-            "stdev_density": 0.00035154513395161953
+            "stdev_density": 0.0032053139714246642
         },
         {
             "temperature": 303.15,
@@ -1977,7 +2241,7 @@
                 "Glycerol"
             ],
             "average_density": 1.1567348434009757,
-            "stdev_density": 0.00043746010020732294
+            "stdev_density": 0.0035676900834952447
         },
         {
             "temperature": 303.15,
@@ -1986,8 +2250,8 @@
             "molecules": [
                 "Glycerol"
             ],
-            "average_density": 1.1272580361149194,
-            "stdev_density": 0.0003265292843678212
+            "average_density": 1.1272580361149196,
+            "stdev_density": 0.00387422029797897
         },
         {
             "temperature": 303.15,
@@ -1997,7 +2261,7 @@
                 "Glycerol"
             ],
             "average_density": 1.079638523527845,
-            "stdev_density": 0.00011272170583526089
+            "stdev_density": 0.004415519967256353
         },
         {
             "temperature": 303.15,
@@ -2006,8 +2270,8 @@
             "molecules": [
                 "Glycerol"
             ],
-            "average_density": 0.9953282189997195,
-            "stdev_density": 7.994781181621764e-05
+            "average_density": 0.9953282189997193,
+            "stdev_density": 0.005766046134139612
         }
     ]
 }

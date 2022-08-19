@@ -5,6 +5,8 @@
 # @License       :   BSD-2-Clause License
 # @Copyright (C) :   2022 Institute of Biochemistry and Technical Biochemistry Stuttgart
 
+from distutils.log import error
+from time import strftime
 from pythermo.thermoml.core import DataReport
 from pythermo.thermoml.tools.readTools import ThermoMLReader
 from pythermo.thermoml.tools.writeTools import ThermoMLWriter
@@ -34,7 +36,7 @@ class Visualize(BaseModel):
                 ax.scatter(x, y, alpha=1.0, label=f"{labelname} - simulation", marker="o",color="orange")
                 ax.plot(x,y, color="orange")
 
-    def plotDataFrame(self, dfs:pd.DataFrame, xAx:str, yAx:str, compound:str, log:bool = False):
+    def plotDataFrame(self, dfs:pd.DataFrame, xAx:str, yAx:str, compound:str, log:bool = False, errorbar:str = ""):
         
         fig, ax = plt.subplots(1,1, figsize=(13,4), dpi=300)
         
@@ -76,8 +78,12 @@ class Visualize(BaseModel):
                             ax.set_yscale('log')
                             
                     elif df['method'].values[0] == 'simulation':
-
-                        ax.scatter(x,y, alpha=1.0, label=f"{temp} K - simulation", marker="o", color=cpick.to_rgba(temp))
+                        if errorbar:
+                            # plot 68% confidence intervals (+- sigmna)
+                            uncert = pd.to_numeric(dfTemp[errorbar])
+                            ax.errorbar(x,y, yerr=uncert,alpha=1.0, label=f"{temp} K - simulation", marker="o", color=cpick.to_rgba(temp))
+                        else:
+                            ax.scatter(x,y, alpha=1.0, label=f"{temp} K - simulation", marker="o", color=cpick.to_rgba(temp))
                         ax.plot(x,y, c=cpick.to_rgba(temp))
                         if log:
                             ax.set_yscale('log')

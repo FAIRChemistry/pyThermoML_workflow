@@ -1,6 +1,6 @@
 # @File          :   access_mixturemm.py
-# @Last modified :   2022/04/24 15:05:36
-# @Author        :   Matthias Gueltig, Jan Range
+# @Last modified :   2022/07/03 15:05:36
+# @Author        :   Matthias Gueltig
 # @Version       :   1.0
 # @License       :   BSD-2-Clause License
 # @Copyright (C) :   2022 Institute of Biochemistry and Technical Biochemistry Stuttgart
@@ -93,6 +93,15 @@ class MixtureMMThermoML(BaseModel):
         
         return [tempDataPoint, frac1DataPoint, frac2DataPoint, densDataPoint]
     
+    def __calculateDiffInf(self, df: pd.DataFrame, intercept, slope, compName: str):
+        # calculate error diff infty
+        
+        avg_boxsize = 1/df.shape[0] * sum(df["boxsize"])
+        avg_boxsize_squared = 1/df.shape[0] * sum(df["boxsize"]*df["boxsize"])
+        std_err = (1/(df.shape[0]-2) * sum((slope*df["boxsize"]+intercept - df[compName])**2))**(1/2)
+        error_diff_infty = std_err * (avg_boxsize_squared/(df.shape[0]*((avg_boxsize_squared-(avg_boxsize)**2))))**(1/2)
+        return error_diff_infty
+
     def read_transport(self, json_file:str):
         """reads in self diffusion coefficient .json output of MixtureMM workflow
 
@@ -151,8 +160,8 @@ class MixtureMMThermoML(BaseModel):
 
         for counter, (index, rows) in enumerate(result_df.iterrows()):
             measurementID = f"meas{counter}"
-            sdiffWatDataPoint = DataPoint(measurementID=measurementID, value=rows["sdiffWat"], propID = sdiffWatID)
-            sdiffMetDataPoint = DataPoint(measurementID = measurementID, value=rows["sdiffComp"], propID = sdiffMetID)
+            sdiffWatDataPoint = DataPoint(measurementID=measurementID, value=rows["sdiffWat"], uncertainty=rows["err_sdiffWat"], propID = sdiffWatID)
+            sdiffMetDataPoint = DataPoint(measurementID = measurementID, value=rows["sdiffComp"], uncertainty=rows["err_sdiffComp"], propID = sdiffMetID)
             #viscDataPoint = DataPoint(measurementID=measurementID, value= rows["visc"], propID = viscID)
             tempDataPoint = DataPoint(measurementID=measurementID, value=rows["temp"], varID = tempID)
             frac1DataPoint = DataPoint(measurementID=measurementID, value=rows["xw"], varID = frac1ID)
@@ -228,13 +237,17 @@ class MixtureMMThermoML(BaseModel):
                         sdiff = dftest[["sdiffComp"]]
                     elif xw == 1.0:
                         sdiff = dftest[["sdiffWat"]]
+
                     reg = LinearRegression()
                     reg.fit(inversBoxSize, sdiff)
                     visc = -kb*temp*xi/(reg.coef_[0][0]*np.pi*6*(10**(-9)))
+                   
                     if xw == 0.0:
-                        result_data.append((xw, temp, None, reg.intercept_[0], visc))
+                        error_diff_infty = self.__calculateDiffInf(df=dftest, intercept=reg.intercept_[0], slope=reg.coef_[0][0], compName="sdiffComp")
+                        result_data.append((xw, temp, None, None, reg.intercept_[0], error_diff_infty, visc))
                     elif xw == 1.0:
-                        result_data.append((xw, temp, reg.intercept_[0], None, visc))
+                        error_diff_infty = self.__calculateDiffInf(df=dftest, intercept=reg.intercept_[0], slope=reg.coef_[0][0], compName="sdiffWat")
+                        result_data.append((xw, temp, reg.intercept_[0], error_diff_infty, None, None, visc))
 
                 # lines of the regression should have the same slope -> conditioned regression
                 else:
@@ -243,6 +256,7 @@ class MixtureMMThermoML(BaseModel):
                     dfComp["moleFrac"] = 1-dfComp["moleFrac"]
                     dfComp["boxsize"] = 1/dfComp["boxsize"]
                     dfWat["boxsize"] = 1/dfWat["boxsize"]
+
                     if dfWat.shape[0] != dfComp.shape[0]:
                         raise "please enter same number of comp and water diffs"
                     else:
@@ -270,9 +284,13 @@ class MixtureMMThermoML(BaseModel):
                     rightSide = np.dot(q.T, b)
                     sol = np.linalg.solve(r,rightSide)
                     visc = (-kb*temp*xi/(10**(-9)))/(sol[1][0]*np.pi*6)
-                    result_data.append((xw, temp, sol[0][0], sol[2][0], visc))
 
-        return pd.DataFrame(result_data, columns=["xw", "temp", "sdiffWat", "sdiffComp", "visc"])
+                    # calculate error diff wat
+                    error_diff_infty_wat = self.__calculateDiffInf(df=dfWat, intercept=sol[0][0], slope=sol[1][0], compName="sdiffWat")
+                    error_diff_infty_comp = self.__calculateDiffInf(df=dfComp, intercept=sol[2][0], slope=sol[1][0], compName ="sdiffComp")
+                    result_data.append((xw, temp, sol[0][0], error_diff_infty_wat, sol[2][0], error_diff_infty_comp, visc))
+
+        return pd.DataFrame(result_data, columns=["xw", "temp", "sdiffWat", "err_sdiffWat", "sdiffComp", "err_sdiffComp", "visc"])
 
     def extract_sdiff_to_dataframe(self, json_data:dict) -> pd.DataFrame:
         data = list()
@@ -285,4 +303,20 @@ class MixtureMMThermoML(BaseModel):
                 data.append((point["chi_water"], point["temperature"], point["volume"]**(1/3), point["self_diffusion_coefficient"], None))
         
         return pd.DataFrame(data, columns = ["moleFrac", "temp", "boxsize", "sdiffWat", "sdiffComp"])
-   
+
+if __name__ == "__main__":
+
+    converter_sim = MixtureMMThermoML(folder_mixtureMM_files="../mixturemm_files/", folder_thermoML_files="../thermoml_files/")
+
+    dataset_sim_dens_meth = converter_sim.read_density(json_file="dens_meth.json")
+    dataset_sim_dens_glyc = converter_sim.read_density(json_file="dens_glyc.json")
+
+    from pythermo_workflow.analysis import Analysis
+
+    analysis = Analysis()
+
+    # Density derived properties
+    dataframe_sim_dens_meth_molVol = analysis.calcMolarVolumeCompWat(dataReport = dataset_sim_dens_meth, pomID="pom1", compound="methanol")
+    dataframe_sim_dens_glyc_molVol = analysis.calcMolarVolumeCompWat(dataReport = dataset_sim_dens_glyc, pomID="pom1", compound="glycerol")
+
+    print(dataframe_sim_dens_meth_molVol)
